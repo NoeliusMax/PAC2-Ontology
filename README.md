@@ -13,16 +13,10 @@ The ontology is designed to model the traceability and management of medical dev
 
 ## Online Documentation
 
-The full documentation, including the class hierarchy, property descriptions, and visual diagrams, is available online via GitHub Pages:
-
-**[View Documentation](https://noeliusmax.github.io/PAC2-Ontology/documentation/index-en.html)**
+The full documentation, including the class hierarchy, property descriptions, and visual diagrams, is available via GitHub Pages: **[View Documentation](https://noeliusmax.github.io/PAC2-Ontology/documentation/index-en.html)**
 
 ## Tools Used
 
 - **Protégé:** For ontology modeling and reasoning.
 - **WIDOCO:** For automatic documentation generation.
-- **WebVOWL:** For the visual representation of the ontology schema.
-
-## License
-
-This project is licensed under the **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
+- **WebVOWL:** For the visual representation of the ontology.
