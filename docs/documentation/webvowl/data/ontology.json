@@ -13,12 +13,6 @@
       "en" : "European high-risk medical devices."
     },
     "other" : {
-      "license" : [ {
-        "identifier" : "license",
-        "language" : "undefined",
-        "value" : "https://creativecommons.org/licenses/by/4.0/",
-        "type" : "iri"
-      } ],
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
@@ -43,287 +37,341 @@
         "value" : "1.0.0",
         "type" : "label"
       } ],
+      "source" : [ {
+        "identifier" : "source",
+        "language" : "undefined",
+        "value" : "http://www.noel-garcia.org/ontologies/medical-devices",
+        "type" : "label"
+      } ],
       "title" : [ {
         "identifier" : "title",
         "language" : "en",
         "value" : "PAC2 - Medical Devices and Incidents",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "mdo",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "Noël García Pou",
+        "type" : "label"
+      } ],
+      "logo" : [ {
+        "identifier" : "logo",
+        "language" : "undefined",
+        "value" : "https://upload.wikimedia.org/wikipedia/commons/a/a3/Logo_blau_uoc.png",
+        "type" : "label"
+      } ],
+      "bibliographicCitation" : [ {
+        "identifier" : "bibliographicCitation",
+        "language" : "en",
+        "value" : "Noël García Pou (2026) - Medical Devices Ontology - UOC Project",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "http://www.noel-garcia.org/ontologies/medical-devices",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2026-04-27",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "en",
+        "value" : "Project submission",
         "type" : "label"
       } ]
     }
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "5",
+    "id" : "13",
     "type" : "owl:Class"
   }, {
-    "id" : "7",
-    "type" : "owl:Class"
-  }, {
-    "id" : "8",
-    "type" : "owl:Class"
-  }, {
-    "id" : "24",
-    "type" : "owl:Class"
-  }, {
-    "id" : "26",
-    "type" : "owl:Class"
-  }, {
-    "id" : "29",
-    "type" : "owl:Class"
-  }, {
-    "id" : "38",
-    "type" : "owl:Class"
-  }, {
-    "id" : "10",
-    "type" : "owl:Class"
-  }, {
-    "id" : "41",
-    "type" : "owl:Class"
-  }, {
-    "id" : "42",
+    "id" : "37",
     "type" : "owl:Class"
   }, {
     "id" : "46",
     "type" : "owl:Class"
   }, {
-    "id" : "56",
+    "id" : "64",
     "type" : "owl:Class"
   }, {
-    "id" : "57",
+    "id" : "65",
     "type" : "owl:Class"
   }, {
-    "id" : "27",
-    "type" : "owl:Class"
-  }, {
-    "id" : "13",
-    "type" : "owl:Class"
-  }, {
-    "id" : "62",
-    "type" : "owl:Class"
-  }, {
-    "id" : "11",
-    "type" : "owl:Class"
-  }, {
-    "id" : "83",
+    "id" : "75",
     "type" : "owl:Class"
   }, {
     "id" : "84",
     "type" : "owl:Class"
   }, {
-    "id" : "85",
+    "id" : "10",
     "type" : "owl:Class"
-  }, {
-    "id" : "52",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "90",
-    "type" : "owl:Class"
-  }, {
-    "id" : "91",
-    "type" : "owl:Class"
-  }, {
-    "id" : "92",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "50",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "60",
-    "type" : "owl:Class"
-  }, {
-    "id" : "95",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "21",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "96",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "71",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "40",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "69",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "67",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "99",
-    "type" : "rdfs:Datatype"
   }, {
     "id" : "35",
     "type" : "owl:Class"
   }, {
-    "id" : "6",
-    "type" : "owl:Class"
-  }, {
-    "id" : "30",
-    "type" : "owl:Class"
-  }, {
-    "id" : "109",
-    "type" : "owl:Class"
-  }, {
-    "id" : "82",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "9",
-    "type" : "owl:Class"
-  }, {
     "id" : "87",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "110",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "33",
-    "type" : "owl:Class"
-  }, {
-    "id" : "103",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "105",
-    "type" : "owl:Class"
-  }, {
-    "id" : "65",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "98",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "1",
     "type" : "owl:Class"
   }, {
     "id" : "89",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "79",
+    "id" : "90",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "73",
-    "type" : "owl:Class"
-  }, {
-    "id" : "34",
-    "type" : "owl:Class"
-  }, {
-    "id" : "36",
-    "type" : "owl:Class"
-  }, {
-    "id" : "45",
+    "id" : "91",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "37",
-    "type" : "owl:Class"
-  }, {
-    "id" : "63",
-    "type" : "owl:Class"
-  }, {
-    "id" : "114",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "121",
-    "type" : "owl:Class"
-  }, {
-    "id" : "122",
-    "type" : "owl:Class"
-  }, {
-    "id" : "23",
-    "type" : "owl:Class"
-  }, {
-    "id" : "28",
-    "type" : "owl:Class"
-  }, {
-    "id" : "106",
-    "type" : "owl:Class"
-  }, {
-    "id" : "16",
-    "type" : "owl:Class"
-  }, {
-    "id" : "108",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "25",
-    "type" : "owl:Class"
-  }, {
-    "id" : "119",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "143",
+    "id" : "92",
     "type" : "rdfs:Literal"
   }, {
-    "id" : "48",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "113",
-    "type" : "owl:Class"
-  }, {
-    "id" : "140",
-    "type" : "owl:Class"
-  }, {
-    "id" : "141",
-    "type" : "owl:Class"
-  }, {
-    "id" : "142",
-    "type" : "owl:Class"
-  }, {
-    "id" : "153",
-    "type" : "owl:Class"
-  }, {
-    "id" : "147",
-    "type" : "owl:Class"
-  }, {
-    "id" : "31",
-    "type" : "owl:Class"
-  }, {
-    "id" : "32",
+    "id" : "95",
     "type" : "owl:Class"
   }, {
     "id" : "101",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "151",
+    "id" : "102",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "77",
+    "id" : "105",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "2",
-    "type" : "rdfs:Datatype"
-  }, {
-    "id" : "176",
+    "id" : "107",
     "type" : "owl:Class"
   }, {
-    "id" : "94",
+    "id" : "98",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "54",
+    "id" : "108",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "4",
+    "id" : "100",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "59",
+    "id" : "109",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "169",
-    "type" : "owl:unionOf"
-  }, {
-    "id" : "14",
-    "type" : "owl:Class"
-  }, {
-    "id" : "19",
+    "id" : "86",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "17",
-    "type" : "owl:Class"
+    "id" : "110",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "111",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
   }, {
     "id" : "112",
     "type" : "owl:Class"
   }, {
-    "id" : "61",
+    "id" : "117",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "118",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "119",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "123",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "124",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "94",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "127",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "104",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "141",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "142",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "143",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "135",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "145",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "158",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "185",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "owl:Class"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:Class"
+  }, {
+    "id" : "204",
+    "type" : "owl:Class"
+  }, {
+    "id" : "179",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:Class"
+  }, {
+    "id" : "138",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "201",
+    "type" : "owl:Class"
+  }, {
+    "id" : "207",
+    "type" : "owl:Class"
+  }, {
+    "id" : "157",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "78",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:Class"
+  }, {
+    "id" : "54",
+    "type" : "owl:Class"
+  }, {
+    "id" : "69",
     "type" : "owl:Class"
   } ],
   "classAttribute" : [ {
@@ -348,8 +396,8 @@
     "comment" : {
       "en" : "A corrective action performed directly on the device at its location without removing it."
     },
-    "id" : "5",
-    "superClasses" : [ "6" ]
+    "id" : "13",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#Device",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -519,16 +567,6 @@
         "undefined" : "ACUITY X4 Quadripolar LV Lead"
       }
     }, {
-      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#DEV-002",
-      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-      "comment" : {
-        "en" : "Leadless cardiac pacemaker designed for atrioventricular synchrony."
-      },
-      "labels" : {
-        "IRI-based" : "DEV-002",
-        "en" : "Micra AV Transcatheter Pacing System"
-      }
-    }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#DEV-024",
       "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
       "comment" : {
@@ -537,6 +575,16 @@
       "labels" : {
         "IRI-based" : "DEV-024",
         "undefined" : "Infusion Pump Plum 360"
+      }
+    }, {
+      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#DEV-002",
+      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+      "comment" : {
+        "en" : "Leadless cardiac pacemaker designed for atrioventricular synchrony."
+      },
+      "labels" : {
+        "IRI-based" : "DEV-002",
+        "en" : "Micra AV Transcatheter Pacing System"
       }
     }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#DEV-025",
@@ -612,7 +660,7 @@
     "comment" : {
       "en" : "A medical device used for diagnostic or therapeutic purposes"
     },
-    "id" : "7"
+    "id" : "37"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ProbabilityLevel",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -621,11 +669,11 @@
       "IRI-based" : "ProbabilityLevel",
       "undefined" : "Probability Level"
     },
-    "subClasses" : [ "9", "10", "11" ],
+    "subClasses" : [ "7", "10", "8" ],
     "comment" : {
       "en" : "The likelihood of a risk occurring."
     },
-    "id" : "8"
+    "id" : "46"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#InfectionRisk",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -648,8 +696,8 @@
     "comment" : {
       "en" : "A risk related to the potential transmission of infections through the use of a medical device."
     },
-    "id" : "24",
-    "superClasses" : [ "25" ]
+    "id" : "64",
+    "superClasses" : [ "42" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ActiveDevice",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -669,12 +717,12 @@
         "undefined" : "Active_Device_Type"
       }
     } ],
-    "subClasses" : [ "28" ],
+    "subClasses" : [ "67" ],
     "comment" : {
       "en" : "A medical device that relies on a source of energy other than the human body."
     },
-    "id" : "26",
-    "superClasses" : [ "27" ]
+    "id" : "65",
+    "superClasses" : [ "66" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#DeviceRiskClass",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -683,11 +731,11 @@
       "IRI-based" : "DeviceRiskClass",
       "undefined" : "Device Risk Class"
     },
-    "subClasses" : [ "30", "31", "32", "33", "34", "35", "36", "37" ],
+    "subClasses" : [ "76", "77", "78", "79", "80", "81", "82", "83" ],
     "comment" : {
       "en" : "A classification level indicating the risk associated with a medical device."
     },
-    "id" : "29"
+    "id" : "75"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#InterferenceRisk",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -710,8 +758,8 @@
     "comment" : {
       "en" : "A risk caused by flaws in the interaction (physical, cognitive, or logical) between the person and the device."
     },
-    "id" : "38",
-    "superClasses" : [ "25" ]
+    "id" : "84",
+    "superClasses" : [ "42" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#Medium",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -735,7 +783,7 @@
       "en" : "A probability level indicating a moderate likelihood of occurrence."
     },
     "id" : "10",
-    "superClasses" : [ "8" ]
+    "superClasses" : [ "46" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#DevicePerformance",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -758,8 +806,8 @@
     "comment" : {
       "en" : "A risk category related to issues affecting the performance of a medical device."
     },
-    "id" : "41",
-    "superClasses" : [ "14" ]
+    "id" : "35",
+    "superClasses" : [ "48" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ImplantableDevice",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -779,12 +827,40 @@
         "undefined" : "Implantable_Type"
       }
     } ],
-    "subClasses" : [ "28" ],
+    "subClasses" : [ "67" ],
     "comment" : {
       "en" : "A device intended to be placed inside the human body."
     },
-    "id" : "42",
-    "superClasses" : [ "27" ]
+    "id" : "87",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "89",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "90",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "91",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "92",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ContaminationRisk",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -807,8 +883,29 @@
     "comment" : {
       "en" : "A risk associated with contamination of a device by biological, chemical, or other substances."
     },
-    "id" : "46",
-    "superClasses" : [ "25" ]
+    "id" : "95",
+    "superClasses" : [ "42" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "101",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "102",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "105",
+    "label" : {
+      "IRI-based" : "date"
+    }
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#NearMissIncident",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -831,8 +928,64 @@
     "comment" : {
       "en" : "A Near Miss incident involving a medical device."
     },
+    "id" : "107",
+    "superClasses" : [ "18" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "98",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "108",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "100",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "109",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "86",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "110",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "111",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
     "id" : "56",
-    "superClasses" : [ "23" ]
+    "label" : {
+      "IRI-based" : "integer"
+    }
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#SeriousIncident",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -855,21 +1008,71 @@
     "comment" : {
       "en" : "An incident that led or could lead to serious deterioration of health or death."
     },
-    "id" : "57",
-    "superClasses" : [ "23" ]
+    "id" : "112",
+    "superClasses" : [ "18" ]
   }, {
-    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#Device_Type",
-    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "instances" : 0,
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "117",
     "label" : {
-      "IRI-based" : "Device_Type",
-      "en" : "Device Type"
-    },
-    "subClasses" : [ "60", "42", "61", "26", "62", "63" ],
-    "comment" : {
-      "en" : "The type of the device"
-    },
-    "id" : "27"
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "118",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "121",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "122",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "114",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "123",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "124",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "94",
+    "label" : {
+      "IRI-based" : "integer"
+    }
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#Risk",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -892,19 +1095,6 @@
         "undefined" : "Premature battery depletion"
       }
     }, {
-      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-007",
-      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-      "description" : {
-        "undefined" : "Device-related infection at implantation site or systemic sepsis"
-      },
-      "comment" : {
-        "undefined" : "Risk of infection or sepsis related to the medical device."
-      },
-      "labels" : {
-        "IRI-based" : "RSK-007",
-        "undefined" : "Device-related infection"
-      }
-    }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-018",
       "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
       "description" : {
@@ -916,6 +1106,19 @@
       "labels" : {
         "IRI-based" : "RSK-018",
         "undefined" : "Cybersecurity vulnerability"
+      }
+    }, {
+      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-007",
+      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+      "description" : {
+        "undefined" : "Device-related infection at implantation site or systemic sepsis"
+      },
+      "comment" : {
+        "undefined" : "Risk of infection or sepsis related to the medical device."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-007",
+        "undefined" : "Device-related infection"
       }
     }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-019",
@@ -944,19 +1147,6 @@
         "undefined" : "Biofilm formation"
       }
     }, {
-      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-005",
-      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-      "description" : {
-        "undefined" : "Unintended displacement of implant from intended anatomical position"
-      },
-      "comment" : {
-        "undefined" : "Unintended migration of an implant from its original site."
-      },
-      "labels" : {
-        "IRI-based" : "RSK-005",
-        "undefined" : "Implant migration"
-      }
-    }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-016",
       "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
       "description" : {
@@ -968,6 +1158,19 @@
       "labels" : {
         "IRI-based" : "RSK-016",
         "undefined" : "Reagent cross-reactivity"
+      }
+    }, {
+      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-005",
+      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+      "description" : {
+        "undefined" : "Unintended displacement of implant from intended anatomical position"
+      },
+      "comment" : {
+        "undefined" : "Unintended migration of an implant from its original site."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-005",
+        "undefined" : "Implant migration"
       }
     }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-006",
@@ -996,19 +1199,6 @@
         "undefined" : "Reagent contamination"
       }
     }, {
-      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-014",
-      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-      "description" : {
-        "undefined" : "IVD test returns positive result in absence of target condition"
-      },
-      "comment" : {
-        "undefined" : "Diagnostic risk of reporting a condition when none is present."
-      },
-      "labels" : {
-        "IRI-based" : "RSK-014",
-        "undefined" : "False positive diagnostic"
-      }
-    }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-003",
       "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
       "description" : {
@@ -1022,17 +1212,17 @@
         "undefined" : "Device thrombosis"
       }
     }, {
-      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-015",
+      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-014",
       "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
       "description" : {
-        "undefined" : "IVD test fails to detect target condition in affected individual"
+        "undefined" : "IVD test returns positive result in absence of target condition"
       },
       "comment" : {
-        "undefined" : "Diagnostic risk of failing to detect a target condition."
+        "undefined" : "Diagnostic risk of reporting a condition when none is present."
       },
       "labels" : {
-        "IRI-based" : "RSK-015",
-        "undefined" : "False negative diagnostic"
+        "IRI-based" : "RSK-014",
+        "undefined" : "False positive diagnostic"
       }
     }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-004",
@@ -1046,6 +1236,19 @@
       "labels" : {
         "IRI-based" : "RSK-004",
         "undefined" : "Pump-induced hemolysis"
+      }
+    }, {
+      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-015",
+      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+      "description" : {
+        "undefined" : "IVD test fails to detect target condition in affected individual"
+      },
+      "comment" : {
+        "undefined" : "Diagnostic risk of failing to detect a target condition."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-015",
+        "undefined" : "False negative diagnostic"
       }
     }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-001",
@@ -1074,19 +1277,6 @@
         "undefined" : "MRI metallic artifact"
       }
     }, {
-      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-013",
-      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-      "description" : {
-        "undefined" : "External EMI affecting pacemaker/ICD sensing and pacing functions"
-      },
-      "comment" : {
-        "undefined" : "External EMI interference affecting active implant functions."
-      },
-      "labels" : {
-        "IRI-based" : "RSK-013",
-        "undefined" : "Electromagnetic interference"
-      }
-    }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-002",
       "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
       "description" : {
@@ -1098,6 +1288,19 @@
       "labels" : {
         "IRI-based" : "RSK-002",
         "undefined" : "Mechanical failure"
+      }
+    }, {
+      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-013",
+      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+      "description" : {
+        "undefined" : "External EMI affecting pacemaker/ICD sensing and pacing functions"
+      },
+      "comment" : {
+        "undefined" : "External EMI interference affecting active implant functions."
+      },
+      "labels" : {
+        "IRI-based" : "RSK-013",
+        "undefined" : "Electromagnetic interference"
       }
     }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RSK-010",
@@ -1142,7 +1345,21 @@
     "comment" : {
       "en" : "A potential hazard associated with a medical device, classified according to IMDRF terminology."
     },
-    "id" : "13"
+    "id" : "43"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "116",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "127",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#SingleUseDevice",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1165,8 +1382,62 @@
     "comment" : {
       "en" : "A device intended to be used on one individual during a single procedure."
     },
-    "id" : "62",
-    "superClasses" : [ "27" ]
+    "id" : "72",
+    "superClasses" : [ "66" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "22",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "136",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "104",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "24",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "43", "58", "19" ],
+    "attributes" : [ "union", "anonymous" ],
+    "id" : "141"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "142",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "143",
+    "label" : {
+      "IRI-based" : "string"
+    }
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#Low",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1189,8 +1460,15 @@
     "comment" : {
       "en" : "A probability level indicating a low likelihood of occurrence."
     },
-    "id" : "11",
-    "superClasses" : [ "8" ]
+    "id" : "8",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "135",
+    "label" : {
+      "IRI-based" : "date"
+    }
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#SafetyAlert",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1213,8 +1491,8 @@
     "comment" : {
       "en" : "A notification issued to inform users about potential safety issues related to a medical device."
     },
-    "id" : "83",
-    "superClasses" : [ "6" ]
+    "id" : "16",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#InjuryRisk",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1237,8 +1515,8 @@
     "comment" : {
       "en" : "A risk involving physical harm or injury to a patient or user caused by a device."
     },
-    "id" : "84",
-    "superClasses" : [ "25" ]
+    "id" : "145",
+    "superClasses" : [ "42" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#DiagnosticError",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1261,15 +1539,8 @@
     "comment" : {
       "en" : "A risk category involving incorrect diagnostic results produced by a device."
     },
-    "id" : "85",
-    "superClasses" : [ "14" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "52",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "id" : "1",
+    "superClasses" : [ "48" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#Critical",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1292,8 +1563,8 @@
     "comment" : {
       "en" : "A severity level indicating life-threatening or fatal consequences."
     },
-    "id" : "90",
-    "superClasses" : [ "73" ]
+    "id" : "51",
+    "superClasses" : [ "130" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#DeviceSafety",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1316,22 +1587,8 @@
     "comment" : {
       "en" : "A risk category concerning the safety aspects of a medical device."
     },
-    "id" : "91",
-    "superClasses" : [ "14" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "92",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "50",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "id" : "27",
+    "superClasses" : [ "48" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#InVitroDiagnosticDevice",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1354,64 +1611,8 @@
     "comment" : {
       "en" : "A device used to perform tests on samples outside the human body"
     },
-    "id" : "60",
-    "superClasses" : [ "27" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "95",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "21",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "96",
-    "label" : {
-      "IRI-based" : "date"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "71",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "40",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "69",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "67",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "99",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
+    "id" : "158",
+    "superClasses" : [ "66" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ClassIII",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1434,8 +1635,8 @@
     "comment" : {
       "en" : "Risk Class III for medical devices according to the MDR framework."
     },
-    "id" : "35",
-    "superClasses" : [ "29" ]
+    "id" : "81",
+    "superClasses" : [ "75" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ActionType",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1444,11 +1645,11 @@
       "IRI-based" : "ActionType",
       "undefined" : "Action Type"
     },
-    "subClasses" : [ "5", "105", "83", "106" ],
+    "subClasses" : [ "13", "14", "16", "138" ],
     "comment" : {
       "en" : "The type of corrective action taken in response to an incident."
     },
-    "id" : "6"
+    "id" : "25"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ClassI",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1471,8 +1672,8 @@
     "comment" : {
       "en" : "Risk Class I for medical devices according to the MDR framework."
     },
-    "id" : "30",
-    "superClasses" : [ "29" ]
+    "id" : "76",
+    "superClasses" : [ "75" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#CybersecurityRisk",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1495,15 +1696,8 @@
     "comment" : {
       "en" : "A risk related to unauthorized access, data breaches, or cyber attacks affecting a medical device."
     },
-    "id" : "109",
-    "superClasses" : [ "25" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "82",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "id" : "185",
+    "superClasses" : [ "42" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#High",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1526,22 +1720,8 @@
     "comment" : {
       "en" : "A probability level indicating a high likelihood of occurrence."
     },
-    "id" : "9",
-    "superClasses" : [ "8" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "87",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "110",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
+    "id" : "7",
+    "superClasses" : [ "46" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ClassA",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1564,15 +1744,8 @@
     "comment" : {
       "en" : "Risk Class A for in vitro diagnostic devices according to the IVDR framework."
     },
-    "id" : "33",
-    "superClasses" : [ "29" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "103",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "id" : "79",
+    "superClasses" : [ "75" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#Recall",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1595,22 +1768,8 @@
     "comment" : {
       "en" : "A corrective action involving the removal of a medical device from the market or its return due to safety concerns."
     },
-    "id" : "105",
-    "superClasses" : [ "6" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "65",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "98",
-    "label" : {
-      "IRI-based" : "date"
-    }
+    "id" : "14",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#Manufacturer",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1660,16 +1819,6 @@
         "undefined" : "Hologic Inc."
       }
     }, {
-      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#MAN-015",
-      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-      "comment" : {
-        "undefined" : "World leader in the field of in vitro diagnostics."
-      },
-      "labels" : {
-        "IRI-based" : "MAN-015",
-        "undefined" : "bioMérieux SA"
-      }
-    }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#MAN-004",
       "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
       "comment" : {
@@ -1678,6 +1827,16 @@
       "labels" : {
         "IRI-based" : "MAN-004",
         "undefined" : "Philips Medical Systems"
+      }
+    }, {
+      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#MAN-015",
+      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+      "comment" : {
+        "undefined" : "World leader in the field of in vitro diagnostics."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-015",
+        "undefined" : "bioMérieux SA"
       }
     }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#MAN-001",
@@ -1700,16 +1859,6 @@
         "undefined" : "Drägerwerk AG & Co. KGaA"
       }
     }, {
-      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#MAN-002",
-      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-      "comment" : {
-        "undefined" : "Major manufacturer of cardiovascular and diabetes care devices."
-      },
-      "labels" : {
-        "IRI-based" : "MAN-002",
-        "undefined" : "Abbott Medical Devices"
-      }
-    }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#MAN-013",
       "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
       "comment" : {
@@ -1718,6 +1867,16 @@
       "labels" : {
         "IRI-based" : "MAN-013",
         "undefined" : "Nipro Corporation"
+      }
+    }, {
+      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#MAN-002",
+      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+      "comment" : {
+        "undefined" : "Major manufacturer of cardiovascular and diabetes care devices."
+      },
+      "labels" : {
+        "IRI-based" : "MAN-002",
+        "undefined" : "Abbott Medical Devices"
       }
     }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#MAN-007",
@@ -1773,21 +1932,7 @@
     "comment" : {
       "en" : "An organization responsible for producing medical devices and registering them in EUDAMED."
     },
-    "id" : "1"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "89",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "79",
-    "label" : {
-      "IRI-based" : "date"
-    }
+    "id" : "21"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#SeverityLevel",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1796,11 +1941,11 @@
       "IRI-based" : "SeverityLevel",
       "undefined" : "Severity Level"
     },
-    "subClasses" : [ "112", "113", "90" ],
+    "subClasses" : [ "54", "52", "51" ],
     "comment" : {
       "en" : "The level of severity associated with a risk."
     },
-    "id" : "73"
+    "id" : "130"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ClassD",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1823,8 +1968,8 @@
     "comment" : {
       "en" : "Risk Class D for in vitro diagnostic devices according to the IVDR framework."
     },
-    "id" : "34",
-    "superClasses" : [ "29" ]
+    "id" : "80",
+    "superClasses" : [ "75" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ClassC",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1847,39 +1992,8 @@
     "comment" : {
       "en" : "Risk Class C for in vitro diagnostic devices according to the IVDR framework."
     },
-    "id" : "36",
-    "superClasses" : [ "29" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "45",
-    "label" : {
-      "IRI-based" : "integer"
-    }
-  }, {
-    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ClassB",
-    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "instances" : 0,
-    "label" : {
-      "IRI-based" : "ClassB",
-      "undefined" : "Class B"
-    },
-    "individuals" : [ {
-      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#Class_B",
-      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-      "comment" : {
-        "en" : "Standardized classification values for In Vitro Diagnostic (IVD) devices."
-      },
-      "labels" : {
-        "IRI-based" : "Class_B",
-        "en" : "Class_B"
-      }
-    } ],
-    "comment" : {
-      "en" : "Risk Class B for in vitro diagnostic devices according to the IVDR framework."
-    },
-    "id" : "37",
-    "superClasses" : [ "29" ]
+    "id" : "82",
+    "superClasses" : [ "75" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ActiveImplant",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1902,15 +2016,32 @@
     "comment" : {
       "en" : "A surgically inserted medical device that relies on an external power source to function."
     },
-    "id" : "63",
-    "superClasses" : [ "27" ]
+    "id" : "74",
+    "superClasses" : [ "66" ]
   }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "114",
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ClassB",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "instances" : 0,
     "label" : {
-      "IRI-based" : "string"
-    }
+      "IRI-based" : "ClassB",
+      "undefined" : "Class B"
+    },
+    "individuals" : [ {
+      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#Class_B",
+      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+      "comment" : {
+        "en" : "Standardized classification values for In Vitro Diagnostic (IVD) devices."
+      },
+      "labels" : {
+        "IRI-based" : "Class_B",
+        "en" : "Class_B"
+      }
+    } ],
+    "comment" : {
+      "en" : "Risk Class B for in vitro diagnostic devices according to the IVDR framework."
+    },
+    "id" : "83",
+    "superClasses" : [ "75" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#MalfunctionRisk",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1933,8 +2064,8 @@
     "comment" : {
       "en" : "A risk related to the failure or malfunction of a medical device."
     },
-    "id" : "121",
-    "superClasses" : [ "25" ]
+    "id" : "204",
+    "superClasses" : [ "42" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#DiagnosticRisk",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1957,8 +2088,8 @@
     "comment" : {
       "en" : "A risk involving incorrect or unreliable diagnostic results produced by a device."
     },
-    "id" : "122",
-    "superClasses" : [ "25" ]
+    "id" : "179",
+    "superClasses" : [ "42" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#IncidentType",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1967,11 +2098,11 @@
       "IRI-based" : "IncidentType",
       "undefined" : "Incident Type"
     },
-    "subClasses" : [ "57", "56" ],
+    "subClasses" : [ "112", "107" ],
     "comment" : {
       "en" : "The classification of the reported incident."
     },
-    "id" : "23"
+    "id" : "18"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ImplantableActiveDevice",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -1994,8 +2125,8 @@
     "comment" : {
       "en" : "An active device intended to be completely or partially introduced into the body."
     },
-    "id" : "28",
-    "superClasses" : [ "42", "26" ]
+    "id" : "67",
+    "superClasses" : [ "87", "65" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#UserNotice",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2018,8 +2149,8 @@
     "comment" : {
       "en" : "A notification issued to users with instructions or information regarding the safe use of a medical device."
     },
-    "id" : "106",
-    "superClasses" : [ "6" ]
+    "id" : "138",
+    "superClasses" : [ "25" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#CorrectiveAction",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2133,19 +2264,6 @@
         "undefined" : "FSCA-011 (In Situ Correction)"
       }
     }, {
-      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#FSCA-012",
-      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-      "description" : {
-        "undefined" : "Urgent Recall_Type and remote software update. Drug library version 4.3.0 deployed correcting decimal point error. All units verified by biomedical engineering before return to clinical use."
-      },
-      "comment" : {
-        "undefined" : "Urgent recall and software update for infusion pump drug library."
-      },
-      "labels" : {
-        "IRI-based" : "FSCA-012",
-        "undefined" : "FSCA-012 (Recall)"
-      }
-    }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#FSCA-001",
       "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
       "description" : {
@@ -2157,6 +2275,19 @@
       "labels" : {
         "IRI-based" : "FSCA-001",
         "undefined" : "FSCA-001 (Safety Alert)"
+      }
+    }, {
+      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#FSCA-012",
+      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+      "description" : {
+        "undefined" : "Urgent Recall_Type and remote software update. Drug library version 4.3.0 deployed correcting decimal point error. All units verified by biomedical engineering before return to clinical use."
+      },
+      "comment" : {
+        "undefined" : "Urgent recall and software update for infusion pump drug library."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-012",
+        "undefined" : "FSCA-012 (Recall)"
       }
     }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#FSCA-002",
@@ -2185,19 +2316,6 @@
         "undefined" : "FSCA-013 (Safety Alert)"
       }
     }, {
-      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#FSCA-003",
-      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-      "description" : {
-        "undefined" : "Enhanced deployment training and updated IFU for Portico valve implantation technique. New implantation checklist mandatory for all TAVI centres."
-      },
-      "comment" : {
-        "undefined" : "Field correction involving updated implantation techniques."
-      },
-      "labels" : {
-        "IRI-based" : "FSCA-003",
-        "undefined" : "FSCA-003 (In Situ Correction)"
-      }
-    }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#FSCA-014",
       "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
       "description" : {
@@ -2209,6 +2327,19 @@
       "labels" : {
         "IRI-based" : "FSCA-014",
         "undefined" : "FSCA-014 (User Notice)"
+      }
+    }, {
+      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#FSCA-003",
+      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+      "description" : {
+        "undefined" : "Enhanced deployment training and updated IFU for Portico valve implantation technique. New implantation checklist mandatory for all TAVI centres."
+      },
+      "comment" : {
+        "undefined" : "Field correction involving updated implantation techniques."
+      },
+      "labels" : {
+        "IRI-based" : "FSCA-003",
+        "undefined" : "FSCA-003 (In Situ Correction)"
       }
     }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#FSCA-010",
@@ -2227,14 +2358,7 @@
     "comment" : {
       "en" : "An action taken to manage a safety issue related to a medical device."
     },
-    "id" : "16"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "108",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "id" : "58"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RiskType",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2243,32 +2367,11 @@
       "IRI-based" : "RiskType",
       "undefined" : "Risk Type"
     },
-    "subClasses" : [ "46", "24", "109", "38", "140", "121", "141", "122", "84", "142" ],
+    "subClasses" : [ "95", "64", "185", "84", "201", "204", "207", "179", "145", "157" ],
     "comment" : {
       "en" : "The type of risk associated with a medical device."
     },
-    "id" : "25"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "119",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
-    "id" : "143",
-    "label" : {
-      "IRI-based" : "Literal",
-      "undefined" : "Literal"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "48",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "id" : "42"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#Serious",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2291,8 +2394,8 @@
     "comment" : {
       "en" : "A severity level indicating significant health impact or injury."
     },
-    "id" : "113",
-    "superClasses" : [ "73" ]
+    "id" : "52",
+    "superClasses" : [ "130" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#SoftwareRisk",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2315,8 +2418,8 @@
     "comment" : {
       "en" : "A risk caused by software errors, bugs, or failures in a medical device."
     },
-    "id" : "140",
-    "superClasses" : [ "25" ]
+    "id" : "201",
+    "superClasses" : [ "42" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#MaterialRisk",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2339,8 +2442,8 @@
     "comment" : {
       "en" : "A risk associated with the materials used in a device."
     },
-    "id" : "141",
-    "superClasses" : [ "25" ]
+    "id" : "207",
+    "superClasses" : [ "42" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RadiationRisk",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2363,8 +2466,8 @@
     "comment" : {
       "en" : "A risk related to exposure to harmful radiation emitted by a device."
     },
-    "id" : "142",
-    "superClasses" : [ "25" ]
+    "id" : "157",
+    "superClasses" : [ "42" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ProductQuality",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2387,8 +2490,8 @@
     "comment" : {
       "en" : "A risk category related to defects or quality issues in a medical device."
     },
-    "id" : "153",
-    "superClasses" : [ "14" ]
+    "id" : "4",
+    "superClasses" : [ "48" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#DeviceFailure",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2411,8 +2514,8 @@
     "comment" : {
       "en" : "A risk category related to malfunction or failure of a medical device."
     },
-    "id" : "147",
-    "superClasses" : [ "14" ]
+    "id" : "30",
+    "superClasses" : [ "48" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ClassIIb",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2435,8 +2538,8 @@
     "comment" : {
       "en" : "Risk Class IIb for medical devices according to the MDR framework."
     },
-    "id" : "31",
-    "superClasses" : [ "29" ]
+    "id" : "77",
+    "superClasses" : [ "75" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#ClassIIa",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2459,36 +2562,8 @@
     "comment" : {
       "en" : "Risk Class IIa for medical devices according to the MDR framework."
     },
-    "id" : "32",
-    "superClasses" : [ "29" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "101",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "151",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "77",
-    "label" : {
-      "IRI-based" : "date"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "2",
-    "label" : {
-      "IRI-based" : "string"
-    }
+    "id" : "78",
+    "superClasses" : [ "75" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#PatientHarm",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2511,41 +2586,8 @@
     "comment" : {
       "en" : "A risk category involving injury or harm caused to a patient."
     },
-    "id" : "176",
-    "superClasses" : [ "14" ]
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "94",
-    "label" : {
-      "IRI-based" : "boolean"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "54",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "4",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#string",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "59",
-    "label" : {
-      "IRI-based" : "string"
-    }
-  }, {
-    "instances" : 0,
-    "union" : [ "13", "16", "17" ],
-    "attributes" : [ "anonymous", "union" ],
-    "id" : "169"
+    "id" : "2",
+    "superClasses" : [ "48" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#RiskCategory",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2554,18 +2596,11 @@
       "IRI-based" : "RiskCategory",
       "undefined" : "Risk Category"
     },
-    "subClasses" : [ "85", "147", "176", "91", "153", "41" ],
+    "subClasses" : [ "1", "30", "2", "27", "4", "35" ],
     "comment" : {
       "en" : "A category grouping different types of risks."
     },
-    "id" : "14"
-  }, {
-    "iri" : "http://www.w3.org/2001/XMLSchema#date",
-    "baseIri" : "http://www.w3.org/2001/XMLSchema",
-    "id" : "19",
-    "label" : {
-      "IRI-based" : "date"
-    }
+    "id" : "48"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#Incident",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2640,19 +2675,6 @@
         "undefined" : "Incident INC-005 (Lead dislodgement)"
       }
     }, {
-      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#INC-019",
-      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-      "description" : {
-        "undefined" : "Tivoli II cochlear implant failed to respond to initial activation programming. Sound processor replacement resolved the issue."
-      },
-      "comment" : {
-        "undefined" : "Near-miss incident involving cochlear implant activation failure."
-      },
-      "labels" : {
-        "IRI-based" : "INC-019",
-        "undefined" : "Incident INC-019 (Activation failure)"
-      }
-    }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#INC-008",
       "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
       "description" : {
@@ -2664,6 +2686,19 @@
       "labels" : {
         "IRI-based" : "INC-008",
         "undefined" : "Incident INC-008 (Cobalt toxicity)"
+      }
+    }, {
+      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#INC-019",
+      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+      "description" : {
+        "undefined" : "Tivoli II cochlear implant failed to respond to initial activation programming. Sound processor replacement resolved the issue."
+      },
+      "comment" : {
+        "undefined" : "Near-miss incident involving cochlear implant activation failure."
+      },
+      "labels" : {
+        "IRI-based" : "INC-019",
+        "undefined" : "Incident INC-019 (Activation failure)"
       }
     }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#INC-007",
@@ -2692,19 +2727,6 @@
         "undefined" : "Incident INC-018 (Cybersecurity vulnerability)"
       }
     }, {
-      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#INC-002",
-      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-      "description" : {
-        "undefined" : "Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification."
-      },
-      "comment" : {
-        "undefined" : "Malfunction report regarding premature battery depletion."
-      },
-      "labels" : {
-        "IRI-based" : "INC-002",
-        "undefined" : "Incident INC-002 (Battery depletion)"
-      }
-    }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#INC-013",
       "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
       "description" : {
@@ -2718,17 +2740,17 @@
         "undefined" : "Incident INC-013 (False negative HIV)"
       }
     }, {
-      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#INC-001",
+      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#INC-002",
       "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
       "description" : {
-        "undefined" : "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography."
+        "undefined" : "Micra AV pacemaker reached elective replacement indicator 14 months earlier than expected longevity specification."
       },
       "comment" : {
-        "undefined" : "Serious injury involving embolic stroke and device thrombus."
+        "undefined" : "Malfunction report regarding premature battery depletion."
       },
       "labels" : {
-        "IRI-based" : "INC-001",
-        "undefined" : "Incident INC-001 (Embolic stroke)"
+        "IRI-based" : "INC-002",
+        "undefined" : "Incident INC-002 (Battery depletion)"
       }
     }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#INC-012",
@@ -2742,6 +2764,19 @@
       "labels" : {
         "IRI-based" : "INC-012",
         "undefined" : "Incident INC-012 (False negative SARS-CoV-2)"
+      }
+    }, {
+      "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#INC-001",
+      "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+      "description" : {
+        "undefined" : "Patient implanted with HeartMate 3 LVAD developed ischemic stroke 6 months post-implant. Device thrombus confirmed by echocardiography."
+      },
+      "comment" : {
+        "undefined" : "Serious injury involving embolic stroke and device thrombus."
+      },
+      "labels" : {
+        "IRI-based" : "INC-001",
+        "undefined" : "Incident INC-001 (Embolic stroke)"
       }
     }, {
       "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#INC-015",
@@ -2838,7 +2873,20 @@
     "comment" : {
       "en" : "An event related to a medical device that may cause or has caused harm."
     },
-    "id" : "17"
+    "id" : "19"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#DeviceType",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DeviceType",
+      "en" : "Device Type"
+    },
+    "subClasses" : [ "158", "87", "69", "65", "72", "74" ],
+    "comment" : {
+      "en" : "The type of the device"
+    },
+    "id" : "66"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#Moderate",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2861,8 +2909,8 @@
     "comment" : {
       "en" : "A severity level indicating moderate health impact requiring intervention."
     },
-    "id" : "112",
-    "superClasses" : [ "73" ]
+    "id" : "54",
+    "superClasses" : [ "130" ]
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#SelfTestDevice",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
@@ -2885,204 +2933,216 @@
     "comment" : {
       "en" : "A device intended to be able to be used by people without special knowledge."
     },
-    "id" : "61",
-    "superClasses" : [ "27" ]
+    "id" : "69",
+    "superClasses" : [ "66" ]
   } ],
   "property" : [ {
     "id" : "0",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "3",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "5",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "6",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "9",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "11",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "12",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "15",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "18",
-    "type" : "owl:datatypeProperty"
+    "id" : "17",
+    "type" : "owl:objectProperty"
   }, {
     "id" : "20",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "22",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "39",
+    "id" : "23",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "43",
+    "id" : "26",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "28",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "29",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "31",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "32",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "33",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "34",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "36",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "38",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "39",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "40",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "41",
     "type" : "owl:objectProperty"
   }, {
     "id" : "44",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "47",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "49",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "51",
-    "type" : "owl:datatypeProperty"
+    "id" : "50",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "53",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "58",
-    "type" : "owl:datatypeProperty"
+    "id" : "61",
+    "type" : "owl:objectProperty"
   }, {
-    "id" : "64",
-    "type" : "owl:datatypeProperty"
+    "id" : "62",
+    "type" : "owl:disjointWith"
   }, {
-    "id" : "66",
-    "type" : "owl:datatypeProperty"
+    "id" : "63",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "68",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "70",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "72",
-    "type" : "owl:objectProperty"
+    "id" : "71",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "74",
-    "type" : "owl:objectProperty"
+    "id" : "73",
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "76",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "78",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "80",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "81",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "86",
+    "id" : "85",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "88",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "93",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "96",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "97",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "100",
+    "id" : "99",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "102",
+    "id" : "103",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "104",
+    "id" : "106",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "107",
+    "id" : "113",
     "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "111",
-    "type" : "owl:objectProperty"
   }, {
     "id" : "115",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "116",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "117",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "118",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "120",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "123",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "124",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "125",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "126",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "127",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "128",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "129",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "130",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "131",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:objectProperty"
   }, {
     "id" : "132",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "133",
     "type" : "owl:objectProperty"
   }, {
     "id" : "134",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "135",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "136",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "137",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "138",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "139",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "144",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
-    "id" : "145",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "146",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "148",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "149",
+    "id" : "131",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "150",
+    "id" : "146",
     "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "147",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "148",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "149",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "150",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "151",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "152",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "153",
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "154",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "155",
     "type" : "rdfs:SubClassOf"
@@ -3090,1090 +3150,2258 @@
     "id" : "156",
     "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "157",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "158",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "159",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "160",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "161",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "162",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "163",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "164",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "165",
-    "type" : "owl:objectProperty"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "166",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "167",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "168",
     "type" : "owl:datatypeProperty"
   }, {
-    "id" : "170",
+    "id" : "168",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "169",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "170",
+    "type" : "owl:disjointWith"
   }, {
     "id" : "171",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "172",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "173",
     "type" : "rdfs:SubClassOf"
   }, {
     "id" : "174",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:disjointWith"
   }, {
     "id" : "175",
-    "type" : "owl:objectProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
-    "id" : "75",
-    "type" : "owl:objectProperty"
-  }, {
-    "id" : "177",
+    "id" : "176",
     "type" : "owl:objectProperty"
   }, {
     "id" : "178",
-    "type" : "owl:datatypeProperty"
-  }, {
-    "id" : "179",
-    "type" : "owl:datatypeProperty"
+    "type" : "rdfs:SubClassOf"
   }, {
     "id" : "180",
     "type" : "owl:datatypeProperty"
   }, {
     "id" : "181",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "182",
     "type" : "owl:objectProperty"
   }, {
-    "id" : "183",
-    "type" : "rdfs:SubClassOf"
-  }, {
     "id" : "184",
-    "type" : "rdfs:SubClassOf"
-  }, {
-    "id" : "185",
-    "type" : "rdfs:SubClassOf"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "186",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "187",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "188",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "189",
     "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "194",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "198",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "208",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "211",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "212",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "214",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "215",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "217",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "218",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "219",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "220",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "221",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "225",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "227",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "228",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "229",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "230",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "231",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "232",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "233",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "234",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "235",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "237",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "238",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "177",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "239",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "240",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "241",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "242",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "243",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "244",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "245",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "246",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "247",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "248",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "249",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "250",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "251",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "252",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "253",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "254",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "255",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "45",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "256",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "257",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "258",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "259",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "260",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "261",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "262",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "263",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "264",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "265",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "266",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "267",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "268",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "269",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "270",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "271",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "272",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "273",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "274",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "275",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "276",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "277",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "278",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "279",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "280",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "281",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "282",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "283",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "284",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "285",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "286",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "287",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "288",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "289",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "290",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "291",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "292",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "293",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "294",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "295",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "296",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "297",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "298",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "299",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "183",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "300",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "301",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "302",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "303",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "304",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "305",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "306",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "307",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "308",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "309",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "310",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "216",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "311",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "312",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "313",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "314",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "315",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "316",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "317",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "318",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "319",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "320",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "321",
+    "type" : "owl:disjointWith"
   } ],
   "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "0"
+  }, {
+    "range" : "4",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "3"
+  }, {
+    "range" : "4",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "5"
+  }, {
+    "range" : "8",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "6"
+  }, {
+    "range" : "10",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "range" : "10",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "11"
+  }, {
+    "range" : "14",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "12"
+  }, {
+    "range" : "16",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "15"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isIncidentTypeOf",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "isIncidentTypeOf",
+      "en" : "is incident type of"
+    },
+    "domain" : "18",
+    "comment" : {
+      "en" : "Links an incident type to the incidents."
+    },
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "17"
+  }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#competentAuthority",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "2",
+    "range" : "22",
     "label" : {
       "IRI-based" : "competentAuthority",
       "undefined" : "competent authority"
     },
     "cardinality" : "1",
-    "domain" : "1",
+    "domain" : "21",
     "comment" : {
       "en" : "Authority responsible for regulatory oversight."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "0"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "20"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#country",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "4",
+    "range" : "24",
     "label" : {
       "IRI-based" : "country",
       "undefined" : "country"
     },
     "cardinality" : "1",
-    "domain" : "1",
+    "domain" : "21",
     "comment" : {
       "en" : "Country where the manufacturer is located."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "3"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "23"
+  }, {
+    "range" : "2",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "26"
+  }, {
+    "range" : "4",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "28"
+  }, {
+    "range" : "27",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "29"
+  }, {
+    "range" : "1",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "31"
+  }, {
+    "range" : "2",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "32"
+  }, {
+    "range" : "4",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "33"
+  }, {
+    "range" : "27",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "34"
+  }, {
+    "range" : "1",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "36"
+  }, {
+    "range" : "2",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "38"
+  }, {
+    "range" : "4",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "39"
+  }, {
+    "range" : "1",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isRiskTypeOf",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "isRiskTypeOf",
+      "en" : "is risk type of"
+    },
+    "domain" : "42",
+    "comment" : {
+      "en" : "Connects a risk type to the risks that have that type."
+    },
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "41"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#affectedDeviceType_",
+    "inverse" : "45",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "affectedDeviceType_",
+      "en" : "affected device type"
+    },
+    "cardinality" : "1",
+    "domain" : "43",
+    "comment" : {
+      "en" : "Specifies the type of affected device."
+    },
+    "attributes" : [ "irreflexive", "object", "asymmetric", "functional" ],
+    "id" : "44"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#hasRiskCategory",
+    "inverse" : "49",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "14",
+    "range" : "48",
     "label" : {
       "IRI-based" : "hasRiskCategory",
       "undefined" : "has risk category"
     },
     "cardinality" : "1",
-    "domain" : "13",
+    "domain" : "43",
     "comment" : {
       "en" : "Specifies the category of a risk."
     },
-    "attributes" : [ "functional", "asymmetric", "irreflexive", "object" ],
-    "id" : "12"
+    "attributes" : [ "irreflexive", "object", "asymmetric", "functional" ],
+    "id" : "47"
   }, {
-    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#relatedToIncident",
-    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "17",
-    "label" : {
-      "IRI-based" : "relatedToIncident",
-      "undefined" : "related to incident"
-    },
-    "cardinality" : "1",
-    "domain" : "16",
-    "comment" : {
-      "en" : "Links a corrective action to the incident it addresses."
-    },
-    "attributes" : [ "asymmetric", "irreflexive", "object" ],
-    "id" : "15"
+    "range" : "52",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "50"
   }, {
-    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#actionDate",
-    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "19",
-    "label" : {
-      "IRI-based" : "actionDate",
-      "undefined" : "action date"
-    },
-    "cardinality" : "1",
-    "domain" : "16",
-    "comment" : {
-      "en" : "Date when the corrective action was initiated."
-    },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "18"
+    "range" : "54",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "53"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#patientAge",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "21",
+    "range" : "56",
     "label" : {
       "IRI-based" : "patientAge",
       "undefined" : "patient age"
     },
     "maxCardinality" : "1",
-    "domain" : "17",
+    "domain" : "19",
     "comment" : {
       "en" : "Age of the patient involved in the incident."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "20"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#actionDate",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "actionDate",
+      "undefined" : "action date"
+    },
+    "cardinality" : "1",
+    "domain" : "58",
+    "comment" : {
+      "en" : "Date when the corrective action was initiated."
+    },
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#relatedToIncident",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "relatedToIncident",
+      "undefined" : "related to incident"
+    },
+    "cardinality" : "1",
+    "domain" : "58",
+    "comment" : {
+      "en" : "Links a corrective action to the incident it addresses."
+    },
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "60"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#hasIncidentType",
+    "inverse" : "17",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "23",
+    "range" : "18",
     "label" : {
       "IRI-based" : "hasIncidentType",
       "undefined" : "has incident type"
     },
     "cardinality" : "1",
-    "domain" : "17",
+    "domain" : "19",
     "comment" : {
       "en" : "Specifies the type of an incident."
     },
-    "attributes" : [ "functional", "asymmetric", "irreflexive", "object" ],
-    "id" : "22"
+    "attributes" : [ "irreflexive", "object", "asymmetric", "functional" ],
+    "id" : "61"
+  }, {
+    "range" : "52",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "62"
+  }, {
+    "range" : "35",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "63"
+  }, {
+    "range" : "66",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "68"
+  }, {
+    "range" : "66",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "70"
+  }, {
+    "range" : "66",
+    "domain" : "72",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "71"
+  }, {
+    "range" : "66",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "73"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isImplantable",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "40",
+    "range" : "86",
     "label" : {
       "IRI-based" : "isImplantable",
       "undefined" : "is implantable"
     },
     "cardinality" : "1",
-    "domain" : "7",
+    "domain" : "37",
     "comment" : {
       "en" : "Indicates whether the device is implantable."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "39"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "85"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isManufacturerOf",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "7",
+    "range" : "37",
     "label" : {
       "IRI-based" : "isManufacturerOf",
       "en" : "is manufacturer of"
     },
-    "domain" : "1",
+    "domain" : "21",
     "comment" : {
       "en" : "Links a manufacturer with its devices."
     },
-    "attributes" : [ "inverse functional", "asymmetric", "irreflexive", "object" ],
-    "id" : "43"
+    "attributes" : [ "irreflexive", "inverse functional", "object", "asymmetric" ],
+    "id" : "88"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#devicesAffected",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "45",
+    "range" : "94",
     "label" : {
       "IRI-based" : "devicesAffected",
       "undefined" : "devices affected"
     },
     "cardinality" : "1",
-    "domain" : "16",
+    "domain" : "58",
     "comment" : {
       "en" : "Number of devices impacted."
     },
     "attributes" : [ "datatype" ],
-    "id" : "44"
+    "id" : "93"
   }, {
     "iri" : "https://schema.org/#name",
     "baseIri" : "https://schema.org/",
-    "range" : "48",
+    "range" : "91",
     "label" : {
       "IRI-based" : "name",
       "undefined" : "name"
     },
     "cardinality" : "1",
-    "domain" : "1",
+    "domain" : "21",
     "comment" : {
       "en" : "The official name of the manufacturer."
     },
-    "attributes" : [ "functional", "external", "datatype" ],
-    "id" : "47"
+    "attributes" : [ "datatype", "external", "functional" ],
+    "id" : "96"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#riskName",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "50",
+    "range" : "98",
     "label" : {
       "IRI-based" : "riskName",
       "undefined" : "risk name"
     },
     "cardinality" : "1",
-    "domain" : "13",
+    "domain" : "43",
     "comment" : {
       "en" : "Name describing the risk."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "49"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "97"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#status",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "52",
+    "range" : "100",
     "label" : {
       "IRI-based" : "status",
       "undefined" : "status"
     },
     "cardinality" : "1",
-    "domain" : "16",
+    "domain" : "58",
     "comment" : {
       "en" : "Current status of the corrective action."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "51"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "99"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#countriesAffected",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "54",
+    "range" : "104",
     "label" : {
       "IRI-based" : "countriesAffected",
       "undefined" : "countries affected"
     },
     "cardinality" : "1",
-    "domain" : "16",
+    "domain" : "58",
     "comment" : {
       "en" : "Countries impacted by the corrective action."
     },
     "attributes" : [ "datatype" ],
-    "id" : "53"
+    "id" : "103"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#hasManufacturer",
-    "inverse" : "43",
+    "inverse" : "88",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "1",
+    "range" : "21",
     "label" : {
       "IRI-based" : "hasManufacturer",
       "undefined" : "has manufacturer"
     },
     "cardinality" : "1",
-    "domain" : "7",
+    "domain" : "37",
     "comment" : {
       "en" : "Links a device to the manufacturer responsible for it."
     },
-    "attributes" : [ "functional", "asymmetric", "irreflexive", "object" ],
-    "id" : "55"
+    "attributes" : [ "irreflexive", "object", "asymmetric", "functional" ],
+    "id" : "106"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#countryReported",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "59",
+    "range" : "114",
     "label" : {
       "IRI-based" : "countryReported",
       "undefined" : "country reported"
     },
     "cardinality" : "1",
-    "domain" : "17",
+    "domain" : "19",
     "comment" : {
       "en" : "The country where the incident was reported."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "58"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "113"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#eudamedFSCARef",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "65",
+    "range" : "116",
     "label" : {
       "IRI-based" : "eudamedFSCARef",
       "undefined" : "eudamed f s c a ref"
     },
     "cardinality" : "1",
-    "domain" : "16",
+    "domain" : "58",
     "comment" : {
       "en" : "Reference identifier of the corrective action in EUDAMED."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "64"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "115"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#outcome",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "67",
+    "range" : "111",
     "label" : {
       "IRI-based" : "outcome",
       "undefined" : "outcome"
     },
     "cardinality" : "1",
-    "domain" : "17",
+    "domain" : "19",
     "comment" : {
       "en" : "Result or consequence of the incident."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "66"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "120"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isIVD",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "69",
+    "range" : "109",
     "label" : {
       "IRI-based" : "isIVD",
       "undefined" : "is i v d"
     },
     "cardinality" : "1",
-    "domain" : "7",
+    "domain" : "37",
     "comment" : {
       "en" : "Indicates whether the device is an in vitro diagnostic device."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "68"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "125"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#regulatoryFramework",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "71",
+    "range" : "102",
     "label" : {
       "IRI-based" : "regulatoryFramework",
       "undefined" : "regulatory framework"
     },
     "cardinality" : "1",
-    "domain" : "7",
+    "domain" : "37",
     "comment" : {
       "en" : "The regulatory framework under which the device is classified, MDR or IVDR."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "70"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isActionTypeOf",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "58",
+    "label" : {
+      "IRI-based" : "isActionTypeOf",
+      "en" : "is action type of"
+    },
+    "domain" : "25",
+    "comment" : {
+      "en" : "Links the type of a corrective measure to its actions."
+    },
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "128"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#hasSeverity",
+    "inverse" : "131",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "73",
+    "range" : "130",
     "label" : {
       "IRI-based" : "hasSeverity",
       "undefined" : "has severity"
     },
     "cardinality" : "1",
-    "domain" : "13",
+    "domain" : "43",
     "comment" : {
       "en" : "Indicates the severity level of a risk."
     },
-    "attributes" : [ "functional", "asymmetric", "irreflexive", "object" ],
-    "id" : "72"
+    "attributes" : [ "irreflexive", "object", "asymmetric", "functional" ],
+    "id" : "129"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#hasIncidentRecorded",
-    "inverse" : "75",
+    "inverse" : "133",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "17",
+    "range" : "19",
     "label" : {
       "IRI-based" : "hasIncidentRecorded",
       "en" : "has incident recorded"
     },
-    "domain" : "7",
+    "domain" : "37",
     "comment" : {
       "en" : "Links a device with its known incidents."
     },
-    "attributes" : [ "asymmetric", "irreflexive", "object" ],
-    "id" : "74"
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "132"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#closureDate",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "77",
+    "range" : "135",
     "label" : {
       "IRI-based" : "closureDate",
       "undefined" : "closure date"
     },
     "maxCardinality" : "1",
-    "domain" : "16",
+    "domain" : "58",
     "comment" : {
       "en" : "Date when the corrective action was completed."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "76"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "134"
+  }, {
+    "range" : "138",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "137"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#detectionDate",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "79",
+    "range" : "123",
     "label" : {
       "IRI-based" : "detectionDate",
       "undefined" : "detection date"
     },
     "cardinality" : "1",
-    "domain" : "17",
+    "domain" : "19",
     "comment" : {
       "en" : "The date when the incident or risk was first detected."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "78"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "139"
   }, {
-    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#affected_device_type",
-    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "7",
-    "label" : {
-      "IRI-based" : "affected_device_type",
-      "en" : "affected device type"
-    },
-    "domain" : "13",
-    "comment" : {
-      "en" : "Specifies the type of affected device."
-    },
-    "attributes" : [ "functional", "asymmetric", "irreflexive", "object" ],
-    "id" : "80"
+    "range" : "112",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "140"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#intendedPurpose",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "82",
+    "range" : "121",
     "label" : {
       "IRI-based" : "intendedPurpose",
       "undefined" : "intended purpose"
     },
     "cardinality" : "1",
-    "domain" : "7",
+    "domain" : "37",
     "comment" : {
       "en" : "The intended use of the device."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "81"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isSeverityOf",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "isSeverityOf",
+      "undefined" : "is severity of"
+    },
+    "domain" : "130",
+    "comment" : {
+      "en" : "Connects a severity value with the risk that have its value."
+    },
+    "attributes" : [ "irreflexive", "inverse functional", "object", "asymmetric" ],
+    "id" : "131"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#imdrfCode",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "87",
+    "range" : "119",
     "label" : {
       "IRI-based" : "imdrfCode",
       "undefined" : "imdrf code"
     },
     "cardinality" : "1",
-    "domain" : "13",
+    "domain" : "43",
     "comment" : {
       "en" : "Code assigned according to IMDRF risk classification."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "86"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isRiskCategoryOf",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "isRiskCategoryOf",
+      "en" : "is risk category of"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "Links a risk category its risks."
+    },
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "49"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#eudamedSRN",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "89",
+    "range" : "117",
     "label" : {
       "IRI-based" : "eudamedSRN",
       "undefined" : "eudamed s r n"
     },
     "cardinality" : "1",
-    "domain" : "1",
+    "domain" : "21",
     "comment" : {
       "en" : "Single Registration Number assigned in EUDAMED."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "88"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "147"
+  }, {
+    "range" : "138",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "148"
+  }, {
+    "range" : "16",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "149"
+  }, {
+    "range" : "138",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "150"
+  }, {
+    "range" : "78",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "151"
+  }, {
+    "range" : "81",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "152"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#correctiveActionTaken",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "94",
+    "range" : "136",
     "label" : {
       "IRI-based" : "correctiveActionTaken",
       "undefined" : "corrective action taken"
     },
     "cardinality" : "1",
-    "domain" : "17",
+    "domain" : "19",
     "comment" : {
       "en" : "Indicates whether a corrective action has been taken in response to the incident."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "93"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "153"
+  }, {
+    "range" : "76",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "154"
+  }, {
+    "range" : "42",
+    "domain" : "145",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "155"
+  }, {
+    "range" : "42",
+    "domain" : "157",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "156"
+  }, {
+    "range" : "78",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "159"
+  }, {
+    "range" : "48",
+    "domain" : "1",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "160"
+  }, {
+    "range" : "81",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "161"
+  }, {
+    "range" : "48",
+    "domain" : "30",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "162"
+  }, {
+    "range" : "80",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "163"
+  }, {
+    "range" : "48",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "164"
+  }, {
+    "range" : "77",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "165"
+  }, {
+    "range" : "48",
+    "domain" : "27",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "166"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#eventDate",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "98",
+    "range" : "118",
     "label" : {
       "IRI-based" : "eventDate",
       "undefined" : "event date"
     },
     "cardinality" : "1",
-    "domain" : "17",
+    "domain" : "19",
     "comment" : {
       "en" : "Date when the incident occurred."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "97"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "167"
+  }, {
+    "range" : "82",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "168"
+  }, {
+    "range" : "48",
+    "domain" : "4",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "169"
+  }, {
+    "range" : "77",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "170"
+  }, {
+    "range" : "48",
+    "domain" : "35",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "171"
+  }, {
+    "range" : "76",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "172"
+  }, {
+    "range" : "66",
+    "domain" : "158",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "173"
+  }, {
+    "range" : "80",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "174"
+  }, {
+    "range" : "66",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "175"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#hasReported",
+    "inverse" : "177",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "19",
+    "label" : {
+      "IRI-based" : "hasReported",
+      "en" : "has reported"
+    },
+    "domain" : "21",
+    "comment" : {
+      "en" : "Relates an organization to the incidents they have reported."
+    },
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "176"
+  }, {
+    "range" : "42",
+    "domain" : "179",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "178"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#affectedDeviceType",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "101",
+    "range" : "142",
     "label" : {
       "IRI-based" : "affectedDeviceType",
-      "undefined" : "affected device type"
+      "en" : "affected device type"
     },
-    "cardinality" : "1",
-    "domain" : "13",
+    "domain" : "43",
     "comment" : {
-      "en" : "Type of device affected by the risk."
+      "en" : "The type of the device related."
     },
-    "attributes" : [ "datatype" ],
-    "id" : "100"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "180"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#eudamedIncidentRef",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "103",
+    "range" : "127",
     "label" : {
       "IRI-based" : "eudamedIncidentRef",
       "undefined" : "eudamed incident ref"
     },
     "cardinality" : "1",
-    "domain" : "17",
+    "domain" : "19",
     "comment" : {
       "en" : "Reference identifier of the incident in EUDAMED."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "102"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "181"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#hasRiskClass",
+    "inverse" : "183",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "29",
+    "range" : "75",
     "label" : {
       "IRI-based" : "hasRiskClass",
       "undefined" : "has risk class"
     },
     "cardinality" : "1",
-    "domain" : "7",
+    "domain" : "37",
     "comment" : {
       "en" : "Defines the regulatory risk classification of a device."
     },
-    "attributes" : [ "functional", "asymmetric", "irreflexive", "object" ],
-    "id" : "104"
+    "attributes" : [ "irreflexive", "object", "asymmetric", "functional" ],
+    "id" : "182"
   }, {
     "iri" : "https://schema.org/#email",
     "baseIri" : "https://schema.org/",
-    "range" : "108",
+    "range" : "90",
     "label" : {
       "IRI-based" : "email",
       "undefined" : "email"
     },
     "cardinality" : "1",
-    "domain" : "1",
+    "domain" : "21",
     "comment" : {
       "en" : "The contact email address of the manufacturer."
     },
-    "attributes" : [ "external", "datatype" ],
-    "id" : "107"
+    "attributes" : [ "datatype", "external" ],
+    "id" : "184"
   }, {
-    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#has_device_type",
-    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "27",
-    "label" : {
-      "IRI-based" : "has_device_type",
-      "undefined" : "has device type"
-    },
-    "domain" : "7",
-    "comment" : {
-      "en" : "The type of the device."
-    },
-    "attributes" : [ "functional", "asymmetric", "irreflexive", "object" ],
-    "id" : "111"
+    "range" : "81",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "186"
   }, {
-    "range" : "29",
-    "domain" : "32",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "115"
+    "range" : "76",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "187"
   }, {
-    "range" : "29",
-    "domain" : "34",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "116"
+    "range" : "78",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "188"
   }, {
-    "range" : "29",
-    "domain" : "33",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "117"
+    "range" : "18",
+    "domain" : "112",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "189"
   }, {
-    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#udi_di",
-    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "119",
-    "label" : {
-      "IRI-based" : "udi_di",
-      "undefined" : "udi_di"
-    },
-    "cardinality" : "1",
-    "domain" : "7",
-    "comment" : {
-      "en" : "The unique device identifier."
-    },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "118"
+    "range" : "83",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "190"
+  }, {
+    "range" : "18",
+    "domain" : "107",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "191"
+  }, {
+    "range" : "72",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "192"
+  }, {
+    "range" : "42",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "193"
+  }, {
+    "range" : "80",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "194"
+  }, {
+    "range" : "42",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "195"
+  }, {
+    "range" : "82",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "196"
+  }, {
+    "range" : "42",
+    "domain" : "185",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "197"
+  }, {
+    "range" : "87",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "198"
+  }, {
+    "range" : "42",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "199"
+  }, {
+    "range" : "42",
+    "domain" : "201",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "200"
+  }, {
+    "range" : "69",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "202"
+  }, {
+    "range" : "42",
+    "domain" : "204",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "203"
+  }, {
+    "range" : "158",
+    "domain" : "87",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "205"
+  }, {
+    "range" : "42",
+    "domain" : "207",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "206"
+  }, {
+    "range" : "201",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "208"
+  }, {
+    "range" : "130",
+    "domain" : "52",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "209"
+  }, {
+    "range" : "130",
+    "domain" : "51",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "210"
+  }, {
+    "range" : "64",
+    "domain" : "185",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "211"
+  }, {
+    "range" : "179",
+    "domain" : "185",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "212"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#scope",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "92",
+    "range" : "108",
     "label" : {
       "IRI-based" : "scope",
       "undefined" : "scope"
     },
     "cardinality" : "1",
-    "domain" : "16",
+    "domain" : "58",
     "comment" : {
       "en" : "Scope of the corrective action."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "120"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "213"
   }, {
-    "range" : "23",
-    "domain" : "56",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "123"
-  }, {
-    "range" : "23",
-    "domain" : "57",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "124"
-  }, {
-    "range" : "29",
-    "domain" : "31",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "125"
-  }, {
-    "range" : "29",
-    "domain" : "30",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "126"
-  }, {
-    "range" : "73",
-    "domain" : "113",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "127"
-  }, {
-    "range" : "73",
-    "domain" : "112",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "128"
-  }, {
-    "range" : "26",
-    "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "129"
-  }, {
-    "range" : "73",
-    "domain" : "90",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "130"
-  }, {
-    "range" : "6",
-    "domain" : "106",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "131"
-  }, {
-    "range" : "6",
-    "domain" : "83",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "132"
-  }, {
-    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#reportedBy",
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#udi_di",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "1",
+    "range" : "89",
     "label" : {
-      "IRI-based" : "reportedBy",
-      "undefined" : "reported by"
+      "IRI-based" : "udi_di",
+      "undefined" : "udi_di"
     },
     "cardinality" : "1",
-    "domain" : "17",
+    "domain" : "37",
     "comment" : {
-      "en" : "Indicates the manufacturer that reported the incident."
+      "en" : "The unique device identifier."
     },
-    "attributes" : [ "functional", "asymmetric", "irreflexive", "object" ],
-    "id" : "133"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "214"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#hasDeviceType",
+    "inverse" : "216",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "hasDeviceType",
+      "undefined" : "has device type"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "The type of the device."
+    },
+    "attributes" : [ "irreflexive", "object", "asymmetric", "functional" ],
+    "id" : "215"
+  }, {
+    "range" : "204",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "217"
+  }, {
+    "range" : "75",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "218"
+  }, {
+    "range" : "84",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "219"
+  }, {
+    "range" : "75",
+    "domain" : "83",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "220"
+  }, {
+    "range" : "157",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "221"
+  }, {
+    "range" : "87",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "222"
+  }, {
+    "range" : "207",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "223"
+  }, {
+    "range" : "25",
+    "domain" : "13",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "224"
+  }, {
+    "range" : "179",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "225"
+  }, {
+    "range" : "25",
+    "domain" : "14",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "226"
+  }, {
+    "range" : "185",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "227"
+  }, {
+    "range" : "25",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "228"
+  }, {
+    "range" : "145",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "229"
+  }, {
+    "range" : "25",
+    "domain" : "138",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "230"
+  }, {
+    "range" : "64",
+    "domain" : "95",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "231"
+  }, {
+    "range" : "130",
+    "domain" : "54",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "232"
+  }, {
+    "range" : "75",
+    "domain" : "79",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "233"
+  }, {
+    "range" : "75",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "234"
+  }, {
+    "range" : "77",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "235"
+  }, {
+    "range" : "75",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "236"
+  }, {
+    "range" : "77",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "237"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#deviceName",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "114",
+    "range" : "124",
     "label" : {
       "IRI-based" : "deviceName",
       "undefined" : "device name"
     },
     "cardinality" : "1",
-    "domain" : "7",
+    "domain" : "37",
     "comment" : {
       "en" : "The commercial name of the medical device."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "134"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "238"
   }, {
-    "range" : "6",
-    "domain" : "105",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "135"
-  }, {
-    "range" : "8",
-    "domain" : "10",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "136"
-  }, {
-    "range" : "8",
-    "domain" : "9",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "137"
-  }, {
-    "range" : "6",
-    "domain" : "5",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "138"
-  }, {
-    "range" : "8",
-    "domain" : "11",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "139"
-  }, {
-    "range" : "27",
-    "domain" : "63",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "144"
-  }, {
-    "range" : "27",
-    "domain" : "62",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "145"
-  }, {
-    "range" : "14",
-    "domain" : "147",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "146"
-  }, {
-    "range" : "14",
-    "domain" : "85",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "148"
-  }, {
-    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#hasRiskType",
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#reportedBy",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "25",
+    "range" : "21",
     "label" : {
-      "IRI-based" : "hasRiskType",
-      "undefined" : "has risk type"
+      "IRI-based" : "reportedBy",
+      "undefined" : "reported by"
     },
     "cardinality" : "1",
-    "domain" : "13",
+    "domain" : "19",
     "comment" : {
-      "en" : "Specifies the type of risk."
+      "en" : "Indicates the manufacturer that reported the incident."
     },
-    "attributes" : [ "functional", "asymmetric", "irreflexive", "object" ],
-    "id" : "149"
+    "attributes" : [ "irreflexive", "object", "asymmetric", "functional" ],
+    "id" : "177"
+  }, {
+    "range" : "78",
+    "domain" : "81",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "239"
+  }, {
+    "range" : "81",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "240"
+  }, {
+    "range" : "77",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "241"
+  }, {
+    "range" : "46",
+    "domain" : "7",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "242"
+  }, {
+    "range" : "77",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "243"
+  }, {
+    "range" : "46",
+    "domain" : "10",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "244"
+  }, {
+    "range" : "78",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "245"
+  }, {
+    "range" : "46",
+    "domain" : "8",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "246"
+  }, {
+    "range" : "76",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "247"
+  }, {
+    "range" : "65",
+    "domain" : "67",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "248"
+  }, {
+    "range" : "77",
+    "domain" : "82",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "249"
+  }, {
+    "range" : "75",
+    "domain" : "76",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "250"
+  }, {
+    "range" : "78",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "251"
+  }, {
+    "range" : "75",
+    "domain" : "77",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "252"
+  }, {
+    "range" : "81",
+    "domain" : "80",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "253"
+  }, {
+    "range" : "75",
+    "domain" : "78",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "254"
+  }, {
+    "range" : "84",
+    "domain" : "145",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "255"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isAffectedTypeIn",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "isAffectedTypeIn",
+      "undefined" : "is affected type in"
+    },
+    "domain" : "37",
+    "comment" : {
+      "en" : "Relates a device type to the incidents or actions that have affected that category."
+    },
+    "attributes" : [ "object" ],
+    "id" : "45"
+  }, {
+    "range" : "201",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "256"
+  }, {
+    "range" : "207",
+    "domain" : "145",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "257"
+  }, {
+    "range" : "204",
+    "domain" : "145",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "258"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#authorizationNumber",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "151",
+    "range" : "143",
     "label" : {
       "IRI-based" : "authorizationNumber",
       "undefined" : "authorization number"
     },
     "cardinality" : "1",
-    "domain" : "1",
+    "domain" : "21",
     "comment" : {
       "en" : "Official authorization number assigned to a manufacturer."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "150"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "259"
   }, {
-    "range" : "27",
-    "domain" : "26",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "152"
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#hasRiskType",
+    "inverse" : "41",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "hasRiskType",
+      "undefined" : "has risk type"
+    },
+    "cardinality" : "1",
+    "domain" : "43",
+    "comment" : {
+      "en" : "Specifies the type of risk."
+    },
+    "attributes" : [ "irreflexive", "object", "asymmetric", "functional" ],
+    "id" : "260"
+  }, {
+    "range" : "157",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "261"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isProbabilityOf",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "43",
+    "label" : {
+      "IRI-based" : "isProbabilityOf",
+      "en" : "is probability of"
+    },
+    "domain" : "46",
+    "comment" : {
+      "en" : "Relates a probability level to a specific risk."
+    },
+    "attributes" : [ "irreflexive", "inverse functional", "object", "asymmetric" ],
+    "id" : "262"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#patientSex",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "95",
+    "range" : "101",
     "label" : {
       "IRI-based" : "patientSex",
       "undefined" : "patient sex"
     },
     "maxCardinality" : "1",
-    "domain" : "17",
+    "domain" : "19",
     "comment" : {
       "en" : "Sex of the patient involved."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "154"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "263"
   }, {
-    "range" : "27",
-    "domain" : "61",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "155"
+    "range" : "207",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "264"
   }, {
-    "range" : "27",
-    "domain" : "42",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "156"
+    "range" : "204",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "265"
   }, {
-    "range" : "25",
-    "domain" : "84",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "157"
+    "range" : "201",
+    "domain" : "179",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "266"
   }, {
-    "range" : "25",
-    "domain" : "122",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "158"
+    "range" : "157",
+    "domain" : "179",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "267"
   }, {
-    "range" : "27",
-    "domain" : "60",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "159"
+    "range" : "84",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "268"
   }, {
-    "range" : "25",
-    "domain" : "142",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "160"
+    "range" : "145",
+    "domain" : "64",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "269"
   }, {
-    "range" : "25",
-    "domain" : "140",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "161"
+    "range" : "84",
+    "domain" : "179",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "270"
   }, {
-    "range" : "25",
-    "domain" : "38",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "162"
+    "range" : "145",
+    "domain" : "179",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "271"
   }, {
-    "range" : "25",
-    "domain" : "141",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "163"
+    "range" : "207",
+    "domain" : "179",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "272"
   }, {
-    "range" : "25",
-    "domain" : "121",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "164"
+    "range" : "204",
+    "domain" : "179",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "273"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#hasProbability",
+    "inverse" : "262",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "8",
+    "range" : "46",
     "label" : {
       "IRI-based" : "hasProbability",
       "undefined" : "has probability"
     },
     "cardinality" : "1",
-    "domain" : "13",
+    "domain" : "43",
     "comment" : {
       "en" : "Indicates how likely a risk is to occur."
     },
-    "attributes" : [ "functional", "asymmetric", "irreflexive", "object" ],
-    "id" : "165"
+    "attributes" : [ "irreflexive", "object", "asymmetric", "functional" ],
+    "id" : "274"
   }, {
-    "range" : "25",
-    "domain" : "24",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "166"
+    "range" : "201",
+    "domain" : "185",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "275"
   }, {
-    "range" : "25",
-    "domain" : "46",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "167"
+    "range" : "157",
+    "domain" : "185",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "276"
   }, {
     "iri" : "http://purl.org/dc/terms/description",
     "baseIri" : "http://purl.org/dc/terms",
-    "range" : "143",
+    "range" : "92",
     "label" : {
       "IRI-based" : "description",
       "undefined" : "description"
     },
     "cardinality" : "1",
-    "domain" : "169",
+    "domain" : "141",
     "comment" : {
       "en" : "A textual description providing details about the incident or risk."
     },
-    "attributes" : [ "external", "datatype" ],
-    "id" : "168"
+    "attributes" : [ "datatype", "external" ],
+    "id" : "277"
   }, {
-    "range" : "25",
-    "domain" : "109",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "170"
+    "range" : "64",
+    "domain" : "179",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "278"
   }, {
-    "range" : "29",
-    "domain" : "36",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "171"
+    "range" : "84",
+    "domain" : "185",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "279"
   }, {
-    "range" : "29",
-    "domain" : "35",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "172"
+    "range" : "145",
+    "domain" : "185",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "280"
   }, {
-    "range" : "42",
-    "domain" : "28",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "173"
+    "range" : "207",
+    "domain" : "185",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "281"
   }, {
-    "range" : "29",
+    "range" : "204",
+    "domain" : "185",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "282"
+  }, {
+    "range" : "21",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "283"
+  }, {
+    "range" : "43",
     "domain" : "37",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "174"
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "284"
+  }, {
+    "range" : "43",
+    "domain" : "21",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "285"
+  }, {
+    "range" : "43",
+    "domain" : "19",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "286"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#hasActionType",
+    "inverse" : "128",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "6",
+    "range" : "25",
     "label" : {
       "IRI-based" : "hasActionType",
       "undefined" : "has action type"
     },
     "cardinality" : "1",
-    "domain" : "16",
+    "domain" : "58",
     "comment" : {
       "en" : "Specifies the type of corrective action."
     },
-    "attributes" : [ "functional", "asymmetric", "irreflexive", "object" ],
-    "id" : "175"
+    "attributes" : [ "irreflexive", "object", "asymmetric", "functional" ],
+    "id" : "287"
+  }, {
+    "range" : "43",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "288"
+  }, {
+    "range" : "21",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "289"
+  }, {
+    "range" : "19",
+    "domain" : "37",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "290"
+  }, {
+    "range" : "69",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "291"
+  }, {
+    "range" : "72",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "292"
+  }, {
+    "range" : "158",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "293"
+  }, {
+    "range" : "69",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "294"
+  }, {
+    "range" : "72",
+    "domain" : "74",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "295"
+  }, {
+    "range" : "69",
+    "domain" : "158",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "296"
+  }, {
+    "range" : "72",
+    "domain" : "158",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "297"
+  }, {
+    "range" : "72",
+    "domain" : "69",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "298"
+  }, {
+    "range" : "74",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "299"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isRiskClassOf",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "isRiskClassOf",
+      "en" : "is risk class of"
+    },
+    "domain" : "75",
+    "comment" : {
+      "en" : "Relates a risk class to its devices."
+    },
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "183"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#involvesDevice",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "7",
+    "range" : "37",
     "label" : {
       "IRI-based" : "involvesDevice",
       "undefined" : "involves device"
     },
     "cardinality" : "1",
-    "domain" : "17",
+    "domain" : "19",
     "comment" : {
       "en" : "Associates an incident with the device involved."
     },
-    "attributes" : [ "functional", "asymmetric", "irreflexive", "object" ],
-    "id" : "75"
+    "attributes" : [ "irreflexive", "object", "asymmetric", "functional" ],
+    "id" : "133"
+  }, {
+    "range" : "158",
+    "domain" : "65",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "300"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isManifestedIn",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "17",
+    "range" : "19",
     "label" : {
       "IRI-based" : "isManifestedIn",
       "en" : "is manifested in"
     },
-    "domain" : "13",
+    "domain" : "43",
     "comment" : {
       "en" : "Links a risk with its possible incidents."
     },
-    "attributes" : [ "asymmetric", "irreflexive", "object" ],
-    "id" : "177"
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "301"
+  }, {
+    "range" : "37",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "302"
+  }, {
+    "range" : "201",
+    "domain" : "157",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "303"
+  }, {
+    "range" : "21",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "304"
+  }, {
+    "range" : "19",
+    "domain" : "58",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "305"
+  }, {
+    "range" : "201",
+    "domain" : "204",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "306"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#reportDate",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "96",
+    "range" : "105",
     "label" : {
       "IRI-based" : "reportDate",
       "undefined" : "report date"
     },
     "cardinality" : "1",
-    "domain" : "17",
+    "domain" : "19",
     "comment" : {
       "en" : "Date when the incident was reported."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "178"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "307"
+  }, {
+    "range" : "157",
+    "domain" : "204",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "308"
+  }, {
+    "range" : "201",
+    "domain" : "207",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "309"
+  }, {
+    "range" : "157",
+    "domain" : "207",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "310"
+  }, {
+    "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isDeviceTypeOf",
+    "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "isDeviceTypeOf",
+      "en" : "is device type of"
+    },
+    "domain" : "66",
+    "comment" : {
+      "en" : "Connects a device type to its medical devices."
+    },
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "216"
+  }, {
+    "range" : "207",
+    "domain" : "204",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "311"
+  }, {
+    "range" : "201",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "312"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isActive",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "110",
+    "range" : "122",
     "label" : {
       "IRI-based" : "isActive",
       "undefined" : "is active"
     },
     "cardinality" : "1",
-    "domain" : "7",
+    "domain" : "37",
     "comment" : {
       "en" : "Indicates whether the device requires energy to operate."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "179"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "313"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#isReusable",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "99",
+    "range" : "110",
     "label" : {
       "IRI-based" : "isReusable",
       "undefined" : "is reusable"
     },
     "cardinality" : "1",
-    "domain" : "7",
+    "domain" : "37",
     "comment" : {
       "en" : "Indicates whether the device can be reused."
     },
-    "attributes" : [ "functional", "datatype" ],
-    "id" : "180"
+    "attributes" : [ "datatype", "functional" ],
+    "id" : "314"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#hasCorrectiveAction",
-    "inverse" : "15",
+    "inverse" : "60",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "16",
+    "range" : "58",
     "label" : {
       "IRI-based" : "hasCorrectiveAction",
       "en" : "has corrective action"
     },
-    "domain" : "17",
+    "domain" : "19",
     "comment" : {
       "en" : "Links an incident with its corrective action."
     },
-    "attributes" : [ "asymmetric", "irreflexive", "object" ],
-    "id" : "181"
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "315"
   }, {
     "iri" : "http://www.noel-garcia.org/ontologies/medical-devices#hasRisk",
-    "inverse" : "177",
+    "inverse" : "301",
     "baseIri" : "http://www.noel-garcia.org/ontologies/medical-devices",
-    "range" : "13",
+    "range" : "43",
     "label" : {
       "IRI-based" : "hasRisk",
       "undefined" : "has risk"
     },
     "cardinality" : "1",
-    "domain" : "17",
+    "domain" : "19",
     "comment" : {
       "en" : "Associates an incident with a specific risk."
     },
-    "attributes" : [ "asymmetric", "irreflexive", "object" ],
-    "id" : "182"
+    "attributes" : [ "irreflexive", "object", "asymmetric" ],
+    "id" : "316"
   }, {
-    "range" : "14",
-    "domain" : "91",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "183"
+    "range" : "157",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "317"
   }, {
-    "range" : "14",
-    "domain" : "176",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "184"
+    "range" : "201",
+    "domain" : "145",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "318"
   }, {
-    "range" : "14",
-    "domain" : "41",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "185"
+    "range" : "157",
+    "domain" : "145",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "319"
   }, {
-    "range" : "14",
-    "domain" : "153",
-    "attributes" : [ "anonymous", "object" ],
-    "id" : "186"
+    "range" : "207",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "320"
+  }, {
+    "range" : "204",
+    "domain" : "84",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "321"
   } ]
 }

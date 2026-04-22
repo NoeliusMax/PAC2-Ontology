@@ -8,17 +8,29 @@
 
 <http://www.noel-garcia.org/ontologies/medical-devices> rdf:type owl:Ontology ;
                                                          owl:versionIRI <http://www.noel-garcia.org/ontologies/medical-devices/1.0.0> ;
+                                                         <http://purl.org/dc/terms/bibliographicCitation> "Noël García Pou (2026) - Medical Devices Ontology - UOC Project"@en ;
                                                          <http://purl.org/dc/terms/created> "2026-04-04" ;
                                                          <http://purl.org/dc/terms/creator> "Noël García Pou" ;
                                                          <http://purl.org/dc/terms/description> "European high-risk medical devices."@en ;
+                                                         <http://purl.org/dc/terms/issued> "2026-04-27"^^xsd:date ;
                                                          <http://purl.org/dc/terms/license> <https://creativecommons.org/licenses/by/4.0/> ;
+                                                         <http://purl.org/dc/terms/publisher> "Noël García Pou" ;
+                                                         <http://purl.org/dc/terms/source> "http://www.noel-garcia.org/ontologies/medical-devices"^^xsd:anyURI ;
                                                          <http://purl.org/dc/terms/title> "PAC2 - Medical Devices and Incidents"@en ;
+                                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "mdo" ;
+                                                         <http://purl.org/vocab/vann/preferredNamespaceUri> "http://www.noel-garcia.org/ontologies/medical-devices" ;
                                                          owl:versionInfo "1.0.0" ;
-                                                         <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+                                                         <https://schema.org/logo> "https://upload.wikimedia.org/wikipedia/commons/a/a3/Logo_blau_uoc.png"^^xsd:anyURI ;
+                                                         <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> ;
+                                                         <https://w3id.org/mod#status> "Project submission"@en .
 
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/terms/bibliographicCitation
+<http://purl.org/dc/terms/bibliographicCitation> rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/contributor
 <http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
@@ -37,12 +49,32 @@
                                        rdfs:range xsd:string .
 
 
+###  http://purl.org/dc/terms/issued
+<http://purl.org/dc/terms/issued> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/license
 <http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
 
 
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/source
+<http://purl.org/dc/terms/source> rdf:type owl:AnnotationProperty .
+
+
 ###  http://purl.org/dc/terms/title
 <http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
 
 
 ###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
@@ -61,8 +93,16 @@ owl:versionIRI rdf:type owl:AnnotationProperty .
 owl:versionInfo rdf:type owl:AnnotationProperty .
 
 
+###  https://schema.org/logo
+<https://schema.org/logo> rdf:type owl:AnnotationProperty .
+
+
 ###  https://w3id.org/mod#createdWith
 <https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#status
+<https://w3id.org/mod#status> rdf:type owl:AnnotationProperty .
 
 
 #################################################################
@@ -77,20 +117,22 @@ xsd:date rdf:type rdfs:Datatype .
 #    Object Properties
 #################################################################
 
-###  http://www.noel-garcia.org/ontologies/medical-devices#affected_device_type
-:affected_device_type rdf:type owl:ObjectProperty ,
-                               owl:FunctionalProperty ,
-                               owl:AsymmetricProperty ,
-                               owl:IrreflexiveProperty ;
-                      rdfs:domain :Risk ;
-                      rdfs:range :Device ;
-                      rdfs:comment "Specifies the type of affected device."@en ;
-                      rdfs:label "affected device type"@en .
+###  http://www.noel-garcia.org/ontologies/medical-devices#affectedDeviceType_
+:affectedDeviceType_ rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :isAffectedTypeIn ;
+                     rdf:type owl:FunctionalProperty ,
+                              owl:AsymmetricProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain :Risk ;
+                     rdfs:range :Device ;
+                     rdfs:comment "Specifies the type of affected device."@en ;
+                     rdfs:label "affected device type"@en .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#hasActionType
-:hasActionType rdf:type owl:ObjectProperty ,
-                        owl:FunctionalProperty ,
+:hasActionType rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isActionTypeOf ;
+               rdf:type owl:FunctionalProperty ,
                         owl:AsymmetricProperty ,
                         owl:IrreflexiveProperty ;
                rdfs:domain :CorrectiveAction ;
@@ -110,6 +152,18 @@ xsd:date rdf:type rdfs:Datatype .
                      rdfs:label "has corrective action"@en .
 
 
+###  http://www.noel-garcia.org/ontologies/medical-devices#hasDeviceType
+:hasDeviceType rdf:type owl:ObjectProperty ;
+               owl:inverseOf :isDeviceTypeOf ;
+               rdf:type owl:FunctionalProperty ,
+                        owl:AsymmetricProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain :Device ;
+               rdfs:range :DeviceType ;
+               rdfs:comment "The type of the device."@en ;
+               rdfs:label "has device type" .
+
+
 ###  http://www.noel-garcia.org/ontologies/medical-devices#hasIncidentRecorded
 :hasIncidentRecorded rdf:type owl:ObjectProperty ;
                      owl:inverseOf :involvesDevice ;
@@ -122,8 +176,9 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#hasIncidentType
-:hasIncidentType rdf:type owl:ObjectProperty ,
-                          owl:FunctionalProperty ,
+:hasIncidentType rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isIncidentTypeOf ;
+                 rdf:type owl:FunctionalProperty ,
                           owl:AsymmetricProperty ,
                           owl:IrreflexiveProperty ;
                  rdfs:domain :Incident ;
@@ -145,14 +200,26 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#hasProbability
-:hasProbability rdf:type owl:ObjectProperty ,
-                         owl:FunctionalProperty ,
+:hasProbability rdf:type owl:ObjectProperty ;
+                owl:inverseOf :isProbabilityOf ;
+                rdf:type owl:FunctionalProperty ,
                          owl:AsymmetricProperty ,
                          owl:IrreflexiveProperty ;
                 rdfs:domain :Risk ;
                 rdfs:range :ProbabilityLevel ;
                 rdfs:comment "Indicates how likely a risk is to occur."@en ;
                 rdfs:label "has probability" .
+
+
+###  http://www.noel-garcia.org/ontologies/medical-devices#hasReported
+:hasReported rdf:type owl:ObjectProperty ;
+             owl:inverseOf :reportedBy ;
+             rdf:type owl:AsymmetricProperty ,
+                      owl:IrreflexiveProperty ;
+             rdfs:domain :Manufacturer ;
+             rdfs:range :Incident ;
+             rdfs:comment "Relates an organization to the incidents they have reported."@en ;
+             rdfs:label "has reported"@en .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#hasRisk
@@ -167,8 +234,9 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#hasRiskCategory
-:hasRiskCategory rdf:type owl:ObjectProperty ,
-                          owl:FunctionalProperty ,
+:hasRiskCategory rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :isRiskCategoryOf ;
+                 rdf:type owl:FunctionalProperty ,
                           owl:AsymmetricProperty ,
                           owl:IrreflexiveProperty ;
                  rdfs:domain :Risk ;
@@ -178,8 +246,9 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#hasRiskClass
-:hasRiskClass rdf:type owl:ObjectProperty ,
-                       owl:FunctionalProperty ,
+:hasRiskClass rdf:type owl:ObjectProperty ;
+              owl:inverseOf :isRiskClassOf ;
+              rdf:type owl:FunctionalProperty ,
                        owl:AsymmetricProperty ,
                        owl:IrreflexiveProperty ;
               rdfs:domain :Device ;
@@ -189,8 +258,9 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#hasRiskType
-:hasRiskType rdf:type owl:ObjectProperty ,
-                      owl:FunctionalProperty ,
+:hasRiskType rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isRiskTypeOf ;
+             rdf:type owl:FunctionalProperty ,
                       owl:AsymmetricProperty ,
                       owl:IrreflexiveProperty ;
              rdfs:domain :Risk ;
@@ -200,25 +270,15 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#hasSeverity
-:hasSeverity rdf:type owl:ObjectProperty ,
-                      owl:FunctionalProperty ,
+:hasSeverity rdf:type owl:ObjectProperty ;
+             owl:inverseOf :isSeverityOf ;
+             rdf:type owl:FunctionalProperty ,
                       owl:AsymmetricProperty ,
                       owl:IrreflexiveProperty ;
              rdfs:domain :Risk ;
              rdfs:range :SeverityLevel ;
              rdfs:comment "Indicates the severity level of a risk."@en ;
              rdfs:label "has severity" .
-
-
-###  http://www.noel-garcia.org/ontologies/medical-devices#has_device_type
-:has_device_type rdf:type owl:ObjectProperty ,
-                          owl:FunctionalProperty ,
-                          owl:AsymmetricProperty ,
-                          owl:IrreflexiveProperty ;
-                 rdfs:domain :Device ;
-                 rdfs:range :Device_Type ;
-                 rdfs:comment "The type of the device."@en ;
-                 rdfs:label "has device type" .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#involvesDevice
@@ -230,6 +290,44 @@ xsd:date rdf:type rdfs:Datatype .
                 rdfs:range :Device ;
                 rdfs:comment "Associates an incident with the device involved."@en ;
                 rdfs:label "involves device" .
+
+
+###  http://www.noel-garcia.org/ontologies/medical-devices#isActionTypeOf
+:isActionTypeOf rdf:type owl:ObjectProperty ,
+                         owl:AsymmetricProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain :ActionType ;
+                rdfs:range :CorrectiveAction ;
+                rdfs:comment "Links the type of a corrective measure to its actions."@en ;
+                rdfs:label "is action type of"@en .
+
+
+###  http://www.noel-garcia.org/ontologies/medical-devices#isAffectedTypeIn
+:isAffectedTypeIn rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Device ;
+                  rdfs:range :Risk ;
+                  rdfs:comment "Relates a device type to the incidents or actions that have affected that category."@en ;
+                  rdfs:label "is affected type in" .
+
+
+###  http://www.noel-garcia.org/ontologies/medical-devices#isDeviceTypeOf
+:isDeviceTypeOf rdf:type owl:ObjectProperty ,
+                         owl:AsymmetricProperty ,
+                         owl:IrreflexiveProperty ;
+                rdfs:domain :DeviceType ;
+                rdfs:range :Device ;
+                rdfs:comment "Connects a device type to its medical devices."@en ;
+                rdfs:label "is device type of"@en .
+
+
+###  http://www.noel-garcia.org/ontologies/medical-devices#isIncidentTypeOf
+:isIncidentTypeOf rdf:type owl:ObjectProperty ,
+                           owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:domain :IncidentType ;
+                  rdfs:range :Incident ;
+                  rdfs:comment "Links an incident type to the incidents."@en ;
+                  rdfs:label "is incident type of"@en .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#isManifestedIn
@@ -251,6 +349,58 @@ xsd:date rdf:type rdfs:Datatype .
                   rdfs:range :Device ;
                   rdfs:comment "Links a manufacturer with its devices."@en ;
                   rdfs:label "is manufacturer of"@en .
+
+
+###  http://www.noel-garcia.org/ontologies/medical-devices#isProbabilityOf
+:isProbabilityOf rdf:type owl:ObjectProperty ,
+                          owl:InverseFunctionalProperty ,
+                          owl:AsymmetricProperty ,
+                          owl:IrreflexiveProperty ;
+                 rdfs:domain :ProbabilityLevel ;
+                 rdfs:range :Risk ;
+                 rdfs:comment "Relates a probability level to a specific risk."@en ;
+                 rdfs:label "is probability of"@en .
+
+
+###  http://www.noel-garcia.org/ontologies/medical-devices#isRiskCategoryOf
+:isRiskCategoryOf rdf:type owl:ObjectProperty ,
+                           owl:AsymmetricProperty ,
+                           owl:IrreflexiveProperty ;
+                  rdfs:domain :RiskCategory ;
+                  rdfs:range :Risk ;
+                  rdfs:comment "Links a risk category its risks."@en ;
+                  rdfs:label "is risk category of"@en .
+
+
+###  http://www.noel-garcia.org/ontologies/medical-devices#isRiskClassOf
+:isRiskClassOf rdf:type owl:ObjectProperty ,
+                        owl:AsymmetricProperty ,
+                        owl:IrreflexiveProperty ;
+               rdfs:domain :DeviceRiskClass ;
+               rdfs:range :Device ;
+               rdfs:comment "Relates a risk class to its devices."@en ;
+               rdfs:label "is risk class of"@en .
+
+
+###  http://www.noel-garcia.org/ontologies/medical-devices#isRiskTypeOf
+:isRiskTypeOf rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain :RiskType ;
+              rdfs:range :Risk ;
+              rdfs:comment "Connects a risk type to the risks that have that type."@en ;
+              rdfs:label "is risk type of"@en .
+
+
+###  http://www.noel-garcia.org/ontologies/medical-devices#isSeverityOf
+:isSeverityOf rdf:type owl:ObjectProperty ,
+                       owl:InverseFunctionalProperty ,
+                       owl:AsymmetricProperty ,
+                       owl:IrreflexiveProperty ;
+              rdfs:domain :SeverityLevel ;
+              rdfs:range :Risk ;
+              rdfs:comment "Connects a severity value with the risk that have its value."@en ;
+              rdfs:label "is severity of" .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#relatedToIncident
@@ -298,11 +448,12 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#affectedDeviceType
-:affectedDeviceType rdf:type owl:DatatypeProperty ;
+:affectedDeviceType rdf:type owl:DatatypeProperty ,
+                             owl:FunctionalProperty ;
                     rdfs:domain :Risk ;
                     rdfs:range xsd:string ;
-                    rdfs:comment "Type of device affected by the risk."@en ;
-                    rdfs:label "affected device type" .
+                    rdfs:comment "The type of the device related."@en ;
+                    rdfs:label "affected device type"@en .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#authorizationNumber
@@ -593,14 +744,14 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#ActiveDevice
 :ActiveDevice rdf:type owl:Class ;
-              rdfs:subClassOf :Device_Type ;
+              rdfs:subClassOf :DeviceType ;
               rdfs:comment "A medical device that relies on a source of energy other than the human body."@en ;
               rdfs:label "Active Device" .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#ActiveImplant
 :ActiveImplant rdf:type owl:Class ;
-               rdfs:subClassOf :Device_Type ;
+               rdfs:subClassOf :DeviceType ;
                rdfs:comment "A surgically inserted medical device that relies on an external power source to function."@en ;
                rdfs:label "Active Implant" .
 
@@ -731,17 +882,17 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#Device
 :Device rdf:type owl:Class ;
         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty :hasDeviceType ;
+                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                          owl:onClass :DeviceType
+                        ] ,
+                        [ rdf:type owl:Restriction ;
                           owl:onProperty :hasManufacturer ;
                           owl:cardinality "1"^^xsd:nonNegativeInteger
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :hasRiskClass ;
                           owl:cardinality "1"^^xsd:nonNegativeInteger
-                        ] ,
-                        [ rdf:type owl:Restriction ;
-                          owl:onProperty :has_device_type ;
-                          owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
-                          owl:onClass :Device_Type
                         ] ,
                         [ rdf:type owl:Restriction ;
                           owl:onProperty :deviceName ;
@@ -806,10 +957,10 @@ xsd:date rdf:type rdfs:Datatype .
               rdfs:label "Device Safety" .
 
 
-###  http://www.noel-garcia.org/ontologies/medical-devices#Device_Type
-:Device_Type rdf:type owl:Class ;
-             rdfs:comment "The type of the device"@en ;
-             rdfs:label "Device Type"@en .
+###  http://www.noel-garcia.org/ontologies/medical-devices#DeviceType
+:DeviceType rdf:type owl:Class ;
+            rdfs:comment "The type of the device"@en ;
+            rdfs:label "Device Type"@en .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DiagnosticError
@@ -843,7 +994,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#ImplantableDevice
 :ImplantableDevice rdf:type owl:Class ;
-                   rdfs:subClassOf :Device_Type ;
+                   rdfs:subClassOf :DeviceType ;
                    rdfs:comment "A device intended to be placed inside the human body."@en ;
                    rdfs:label "Implantable Device" .
 
@@ -857,7 +1008,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#InVitroDiagnosticDevice
 :InVitroDiagnosticDevice rdf:type owl:Class ;
-                         rdfs:subClassOf :Device_Type ;
+                         rdfs:subClassOf :DeviceType ;
                          rdfs:comment "A device used to perform tests on samples outside the human body"@en ;
                          rdfs:label "In Vitro Diagnostic Device" .
 
@@ -1019,6 +1170,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#NearMissIncident
 :NearMissIncident rdf:type owl:Class ;
                   rdfs:subClassOf :IncidentType ;
+                  owl:disjointWith :SeriousIncident ;
                   rdfs:comment "A Near Miss incident involving a medical device."@en ;
                   rdfs:label "Near Miss Incident" .
 
@@ -1060,6 +1212,10 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#Risk
 :Risk rdf:type owl:Class ;
       rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :affectedDeviceType_ ;
+                        owl:cardinality "1"^^xsd:nonNegativeInteger
+                      ] ,
+                      [ rdf:type owl:Restriction ;
                         owl:onProperty :hasProbability ;
                         owl:cardinality "1"^^xsd:nonNegativeInteger
                       ] ,
@@ -1077,10 +1233,6 @@ xsd:date rdf:type rdfs:Datatype .
                       ] ,
                       [ rdf:type owl:Restriction ;
                         owl:onProperty <http://purl.org/dc/terms/description> ;
-                        owl:cardinality "1"^^xsd:nonNegativeInteger
-                      ] ,
-                      [ rdf:type owl:Restriction ;
-                        owl:onProperty :affectedDeviceType ;
                         owl:cardinality "1"^^xsd:nonNegativeInteger
                       ] ,
                       [ rdf:type owl:Restriction ;
@@ -1116,7 +1268,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#SelfTestDevice
 :SelfTestDevice rdf:type owl:Class ;
-                rdfs:subClassOf :Device_Type ;
+                rdfs:subClassOf :DeviceType ;
                 rdfs:comment "A device intended to be able to be used by people without special knowledge."@en ;
                 rdfs:label "Self Test Device" .
 
@@ -1143,7 +1295,7 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#SingleUseDevice
 :SingleUseDevice rdf:type owl:Class ;
-                 rdfs:subClassOf :Device_Type ;
+                 rdfs:subClassOf :DeviceType ;
                  rdfs:comment "A device intended to be used on one individual during a single procedure."@en ;
                  rdfs:label "Single Use Device" .
 
@@ -1260,9 +1412,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-001
 :DEV-001 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Implantable_Active_Type ;
          :hasManufacturer :MAN-001 ;
          :hasRiskClass :Class_III ;
-         :has_device_type :Implantable_Active_Type ;
          :deviceName "HeartMate 3 LVAD" ;
          :intendedPurpose "Ventricular assist device for end-stage heart failure" ;
          :isActive "true"^^xsd:boolean ;
@@ -1278,9 +1430,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-002
 :DEV-002 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Active_Implant_Type ;
          :hasManufacturer :MAN-001 ;
          :hasRiskClass :Class_III ;
-         :has_device_type :Active_Implant_Type ;
          :deviceName "Micra AV Transcatheter Pacing System" ;
          :intendedPurpose "Leadless cardiac pacemaker for atrioventricular synchrony" ;
          :isActive "true"^^xsd:boolean ;
@@ -1296,9 +1448,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-003
 :DEV-003 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Implantable_Type ;
          :hasManufacturer :MAN-002 ;
          :hasRiskClass :Class_III ;
-         :has_device_type :Implantable_Type ;
          :deviceName "Portico Transcatheter Heart Valve" ;
          :intendedPurpose "Transcatheter aortic valve replacement (TAVI)" ;
          :isActive "false"^^xsd:boolean ;
@@ -1314,9 +1466,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-004
 :DEV-004 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Implantable_Active_Type ;
          :hasManufacturer :MAN-006 ;
          :hasRiskClass :Class_IIb ;
-         :has_device_type :Implantable_Active_Type ;
          :deviceName "SYNERGY Stent System" ;
          :intendedPurpose "Drug-eluting coronary stent" ;
          :isActive "false"^^xsd:boolean ;
@@ -1332,9 +1484,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-005
 :DEV-005 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Active_Implant_Type ;
          :hasManufacturer :MAN-006 ;
          :hasRiskClass :Class_III ;
-         :has_device_type :Active_Implant_Type ;
          :deviceName "ACUITY X4 Quadripolar LV Lead" ;
          :intendedPurpose "Cardiac resynchronization therapy lead" ;
          :isActive "true"^^xsd:boolean ;
@@ -1350,9 +1502,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-006
 :DEV-006 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Single_Use_Device_Type ;
          :hasManufacturer :MAN-004 ;
          :hasRiskClass :Class_IIb ;
-         :has_device_type :Single_Use_Device_Type ;
          :deviceName "STELLAREX Drug-Coated Balloon" ;
          :intendedPurpose "Peripheral artery drug-coated angioplasty balloon" ;
          :isActive "false"^^xsd:boolean ;
@@ -1368,9 +1520,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-007
 :DEV-007 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Active_Device_Type ;
          :hasManufacturer :MAN-003 ;
          :hasRiskClass :Class_IIa ;
-         :has_device_type :Active_Device_Type ;
          :deviceName "ACUSON Sequoia Ultrasound" ;
          :intendedPurpose "Diagnostic ultrasound imaging system" ;
          :isActive "true"^^xsd:boolean ;
@@ -1386,9 +1538,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-008
 :DEV-008 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Active_Device_Type ;
          :hasManufacturer :MAN-003 ;
          :hasRiskClass :Class_IIa ;
-         :has_device_type :Active_Device_Type ;
          :deviceName "MAGNETOM Vida MRI System" ;
          :intendedPurpose "Magnetic resonance imaging system 3T" ;
          :isActive "true"^^xsd:boolean ;
@@ -1404,9 +1556,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-009
 :DEV-009 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Implantable_Type ;
          :hasManufacturer :MAN-010 ;
          :hasRiskClass :Class_III ;
-         :has_device_type :Implantable_Type ;
          :deviceName "Persona Knee System" ;
          :intendedPurpose "Total knee arthroplasty implant system" ;
          :isActive "false"^^xsd:boolean ;
@@ -1422,9 +1574,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-010
 :DEV-010 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Implantable_Type ;
          :hasManufacturer :MAN-007 ;
          :hasRiskClass :Class_III ;
-         :has_device_type :Implantable_Type ;
          :deviceName "TRITON Total Hip System" ;
          :intendedPurpose "Ceramic-on-ceramic total hip replacement" ;
          :isActive "false"^^xsd:boolean ;
@@ -1440,9 +1592,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-011
 :DEV-011 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Active_Implant_Type ;
          :hasManufacturer :MAN-011 ;
          :hasRiskClass :Class_III ;
-         :has_device_type :Active_Implant_Type ;
          :deviceName "Iluvien Intravitreal Implant" ;
          :intendedPurpose "Sustained-release fluocinolone acetonide ocular implant" ;
          :isActive "false"^^xsd:boolean ;
@@ -1458,9 +1610,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-012
 :DEV-012 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Active_Implant_Type ;
          :hasManufacturer :MAN-008 ;
          :hasRiskClass :Class_III ;
-         :has_device_type :Active_Implant_Type ;
          :deviceName "Viva Cardiac Resynchronization Defibrillator" ;
          :intendedPurpose "Cardiac resynchronization therapy with defibrillation" ;
          :isActive "true"^^xsd:boolean ;
@@ -1476,9 +1628,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-013
 :DEV-013 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Active_Device_Type ;
          :hasManufacturer :MAN-012 ;
          :hasRiskClass :Class_IIb ;
-         :has_device_type :Active_Device_Type ;
          :deviceName "ATERA Mechanical Ventilator" ;
          :intendedPurpose "ICU mechanical ventilator with pressure and volume modes" ;
          :isActive "true"^^xsd:boolean ;
@@ -1494,9 +1646,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-014
 :DEV-014 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Active_Device_Type ;
          :hasManufacturer :MAN-004 ;
          :hasRiskClass :Class_IIa ;
-         :has_device_type :Active_Device_Type ;
          :deviceName "Lumify Portable Ultrasound" ;
          :intendedPurpose "Handheld point-of-care ultrasound probe" ;
          :isActive "true"^^xsd:boolean ;
@@ -1512,9 +1664,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-015
 :DEV-015 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Active_Device_Type ;
          :hasManufacturer :MAN-013 ;
          :hasRiskClass :Class_IIb ;
-         :has_device_type :Active_Device_Type ;
          :deviceName "Hemodialysis Machine 5008S" ;
          :intendedPurpose "High-volume online hemodiafiltration machine" ;
          :isActive "true"^^xsd:boolean ;
@@ -1530,9 +1682,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-016
 :DEV-016 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :In_Vitro_Diagnostic_Device_Type ;
          :hasManufacturer :MAN-005 ;
          :hasRiskClass :Class_C ;
-         :has_device_type :In_Vitro_Diagnostic_Device_Type ;
          :deviceName "cobas e 801 Immunoassay Analyzer" ;
          :intendedPurpose "Automated immunoassay analyzer for clinical laboratory" ;
          :isActive "true"^^xsd:boolean ;
@@ -1548,9 +1700,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-017
 :DEV-017 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :In_Vitro_Diagnostic_Device_Type ;
          :hasManufacturer :MAN-005 ;
          :hasRiskClass :Class_C ;
-         :has_device_type :In_Vitro_Diagnostic_Device_Type ;
          :deviceName "cobas SARS-CoV-2 RT-PCR Test" ;
          :intendedPurpose "Molecular diagnostic test for SARS-CoV-2 detection" ;
          :isActive "false"^^xsd:boolean ;
@@ -1566,9 +1718,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-018
 :DEV-018 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :In_Vitro_Diagnostic_Device_Type ;
          :hasManufacturer :MAN-015 ;
          :hasRiskClass :Class_D ;
-         :has_device_type :In_Vitro_Diagnostic_Device_Type ;
          :deviceName "VIDAS HIV DUO Ultra" ;
          :intendedPurpose "Combined HIV Ag/Ab detection assay" ;
          :isActive "false"^^xsd:boolean ;
@@ -1584,9 +1736,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-019
 :DEV-019 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :In_Vitro_Diagnostic_Device_Type ;
          :hasManufacturer :MAN-014 ;
          :hasRiskClass :Class_C ;
-         :has_device_type :In_Vitro_Diagnostic_Device_Type ;
          :deviceName "PROGENSA PCA3 Assay" ;
          :intendedPurpose "Urine-based prostate cancer diagnosis assay" ;
          :isActive "false"^^xsd:boolean ;
@@ -1602,9 +1754,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-020
 :DEV-020 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :In_Vitro_Diagnostic_Device_Type ;
          :hasManufacturer :MAN-002 ;
          :hasRiskClass :Class_D ;
-         :has_device_type :In_Vitro_Diagnostic_Device_Type ;
          :deviceName "Harmony Prenatal Test" ;
          :intendedPurpose "Non-invasive prenatal testing (NIPT) for aneuploidies" ;
          :isActive "false"^^xsd:boolean ;
@@ -1620,9 +1772,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-021
 :DEV-021 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Self_Test_Device_Type ;
          :hasManufacturer :MAN-009 ;
          :hasRiskClass :Class_C ;
-         :has_device_type :Self_Test_Device_Type ;
          :deviceName "OPTIGA Glucose Monitoring System" ;
          :intendedPurpose "Continuous glucose monitor for patients with diabetes" ;
          :isActive "true"^^xsd:boolean ;
@@ -1638,9 +1790,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-022
 :DEV-022 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Active_Device_Type ;
          :hasManufacturer :MAN-009 ;
          :hasRiskClass :Class_IIa ;
-         :has_device_type :Active_Device_Type ;
          :deviceName "BeneVision N1 Patient Monitor" ;
          :intendedPurpose "Portable patient monitor for vital signs" ;
          :isActive "true"^^xsd:boolean ;
@@ -1656,9 +1808,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-023
 :DEV-023 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Active_Implant_Type ;
          :hasManufacturer :MAN-008 ;
          :hasRiskClass :Class_III ;
-         :has_device_type :Active_Implant_Type ;
          :deviceName "Tivoli II Cochlear Implant" ;
          :intendedPurpose "Active cochlear implant for sensorineural hearing loss" ;
          :isActive "true"^^xsd:boolean ;
@@ -1674,9 +1826,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-024
 :DEV-024 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Active_Device_Type ;
          :hasManufacturer :MAN-002 ;
          :hasRiskClass :Class_IIb ;
-         :has_device_type :Active_Device_Type ;
          :deviceName "Infusion Pump Plum 360" ;
          :intendedPurpose "Large volume infusion pump with drug library" ;
          :isActive "true"^^xsd:boolean ;
@@ -1692,9 +1844,9 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DEV-025
 :DEV-025 rdf:type owl:NamedIndividual ,
                   :Device ;
+         :hasDeviceType :Implantable_Type ;
          :hasManufacturer :MAN-011 ;
          :hasRiskClass :Class_III ;
-         :has_device_type :Implantable_Type ;
          :deviceName "ValveXpert Transcatheter Mitral Valve" ;
          :intendedPurpose "Transcatheter mitral valve replacement system" ;
          :isActive "false"^^xsd:boolean ;
@@ -2715,7 +2867,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-001
 :RSK-001 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Active_Device_Type ;
+         :affectedDeviceType_ :Active_Device_Type ;
          :hasProbability :Low_Probability_Type ;
          :hasRiskCategory :Device_Failure_Cat ;
          :hasRiskType :Malfunction_Rick_Type ;
@@ -2730,7 +2882,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-002
 :RSK-002 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Implantable_Type ;
+         :affectedDeviceType_ :Implantable_Type ;
          :hasProbability :Medium_Probability_Type ;
          :hasRiskCategory :Device_Failure_Cat ;
          :hasRiskType :Malfunction_Rick_Type ;
@@ -2745,7 +2897,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-003
 :RSK-003 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Implantable_Active_Type ;
+         :affectedDeviceType_ :Implantable_Active_Type ;
          :hasProbability :Low_Probability_Type ;
          :hasRiskCategory :Patient_Harm_Cat ;
          :hasRiskType :Injury_Risk_Type ;
@@ -2760,7 +2912,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-004
 :RSK-004 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Active_Implant_Type ;
+         :affectedDeviceType_ :Active_Implant_Type ;
          :hasProbability :Low_Probability_Type ;
          :hasRiskCategory :Patient_Harm_Cat ;
          :hasRiskType :Injury_Risk_Type ;
@@ -2775,7 +2927,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-005
 :RSK-005 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Implantable_Type ;
+         :affectedDeviceType_ :Implantable_Type ;
          :hasProbability :Low_Probability_Type ;
          :hasRiskCategory :Device_Performance_Cat ;
          :hasRiskType :Malfunction_Rick_Type ;
@@ -2790,7 +2942,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-006
 :RSK-006 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Active_Implant_Type ;
+         :affectedDeviceType_ :Active_Implant_Type ;
          :hasProbability :Medium_Probability_Type ;
          :hasRiskCategory :Device_Performance_Cat ;
          :hasRiskType :Malfunction_Rick_Type ;
@@ -2805,7 +2957,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-007
 :RSK-007 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Implantable_Type ;
+         :affectedDeviceType_ :Implantable_Type ;
          :hasProbability :Medium_Probability_Type ;
          :hasRiskCategory :Patient_Harm_Cat ;
          :hasRiskType :Infection_Risk_Type ;
@@ -2820,7 +2972,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-008
 :RSK-008 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Implantable_Type ;
+         :affectedDeviceType_ :Implantable_Type ;
          :hasProbability :High_Probability_Type ;
          :hasRiskCategory :Patient_Harm_Cat ;
          :hasRiskType :Infection_Risk_Type ;
@@ -2835,7 +2987,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-009
 :RSK-009 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Active_Implant_Type ;
+         :affectedDeviceType_ :Active_Implant_Type ;
          :hasProbability :Low_Probability_Type ;
          :hasRiskCategory :Device_Failure_Cat ;
          :hasRiskType :Malfunction_Rick_Type ;
@@ -2850,7 +3002,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-010
 :RSK-010 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Active_Device_Type ;
+         :affectedDeviceType_ :Active_Device_Type ;
          :hasProbability :Low_Probability_Type ;
          :hasRiskCategory :Device_Failure_Cat ;
          :hasRiskType :Software_Risk_Type ;
@@ -2865,7 +3017,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-011
 :RSK-011 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Active_Device_Type ;
+         :affectedDeviceType_ :Active_Device_Type ;
          :hasProbability :Low_Probability_Type ;
          :hasRiskCategory :Patient_Harm_Cat ;
          :hasRiskType :Radiaton_Risk_Type ;
@@ -2880,7 +3032,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-012
 :RSK-012 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Implantable_Type ;
+         :affectedDeviceType_ :Implantable_Type ;
          :hasProbability :High_Probability_Type ;
          :hasRiskCategory :Device_Performance_Cat ;
          :hasRiskType :Interference_Risk_Type ;
@@ -2895,7 +3047,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-013
 :RSK-013 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Active_Implant_Type ;
+         :affectedDeviceType_ :Active_Implant_Type ;
          :hasProbability :Low_Probability_Type ;
          :hasRiskCategory :Device_Performance_Cat ;
          :hasRiskType :Interference_Risk_Type ;
@@ -2910,7 +3062,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-014
 :RSK-014 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :In_Vitro_Diagnostic_Device_Type ;
+         :affectedDeviceType_ :In_Vitro_Diagnostic_Device_Type ;
          :hasProbability :Medium_Probability_Type ;
          :hasRiskCategory :Diagnostic_Error_Cat ;
          :hasRiskType :Diagnostic_Risk_Type ;
@@ -2925,7 +3077,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-015
 :RSK-015 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :In_Vitro_Diagnostic_Device_Type ;
+         :affectedDeviceType_ :In_Vitro_Diagnostic_Device_Type ;
          :hasProbability :Low_Probability_Type ;
          :hasRiskCategory :Diagnostic_Error_Cat ;
          :hasRiskType :Diagnostic_Risk_Type ;
@@ -2940,7 +3092,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-016
 :RSK-016 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :In_Vitro_Diagnostic_Device_Type ;
+         :affectedDeviceType_ :In_Vitro_Diagnostic_Device_Type ;
          :hasProbability :Medium_Probability_Type ;
          :hasRiskCategory :Diagnostic_Error_Cat ;
          :hasRiskType :Diagnostic_Risk_Type ;
@@ -2955,7 +3107,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-017
 :RSK-017 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :In_Vitro_Diagnostic_Device_Type ;
+         :affectedDeviceType_ :In_Vitro_Diagnostic_Device_Type ;
          :hasProbability :Low_Probability_Type ;
          :hasRiskCategory :Product_Quality_Type ;
          :hasRiskType :Contamination_Risk_Type ;
@@ -2970,7 +3122,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-018
 :RSK-018 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Active_Device_Type ;
+         :affectedDeviceType_ :Active_Device_Type ;
          :hasProbability :Low_Probability_Type ;
          :hasRiskCategory :Device_Safety_Cat ;
          :hasRiskType :Cybersecurity_Risk_Type ;
@@ -2985,7 +3137,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-019
 :RSK-019 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Implantable_Type ;
+         :affectedDeviceType_ :Implantable_Type ;
          :hasProbability :Medium_Probability_Type ;
          :hasRiskCategory :Patient_Harm_Cat ;
          :hasRiskType :Material_Risk_Type ;
@@ -3000,7 +3152,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RSK-020
 :RSK-020 rdf:type owl:NamedIndividual ,
                   :Risk ;
-         :affected_device_type :Implantable_Type ;
+         :affectedDeviceType_ :Implantable_Type ;
          :hasProbability :Low_Probability_Type ;
          :hasRiskCategory :Patient_Harm_Cat ;
          :hasRiskType :Material_Risk_Type ;
@@ -3084,6 +3236,104 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 #################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ActiveDevice
+                :ActiveImplant
+                :InVitroDiagnosticDevice
+                :SelfTestDevice
+                :SingleUseDevice
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ActiveImplant
+                :ImplantableDevice
+                :InVitroDiagnosticDevice
+                :SelfTestDevice
+                :SingleUseDevice
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ClassA
+                :ClassB
+                :ClassC
+                :ClassD
+                :ClassI
+                :ClassIII
+                :ClassIIa
+                :ClassIIb
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :ContaminationRisk
+                :CybersecurityRisk
+                :DiagnosticRisk
+                :InfectionRisk
+                :InjuryRisk
+                :InterferenceRisk
+                :MalfunctionRisk
+                :MaterialRisk
+                :RadiationRisk
+                :SoftwareRisk
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :CorrectiveAction
+                :Device
+                :Incident
+                :Manufacturer
+                :Risk
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Critical
+                :Moderate
+                :Serious
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :DeviceFailure
+                :DevicePerformance
+                :DeviceSafety
+                :DiagnosticError
+                :PatientHarm
+                :ProductQuality
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :High
+                :Low
+                :Medium
+              )
+] .
+
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :InSituCorrection
+                :Recall
+                :SafetyAlert
+                :UserNotice
+              )
+] .
+
+
+#################################################################
 #    Rules
 #################################################################
 
@@ -3094,6 +3344,249 @@ xsd:date rdf:type rdfs:Datatype .
 :i rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
 
 :r rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "CorrectiveAction - In Situ" ;
+   rdfs:label "In situ" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :CorrectiveAction ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasActionType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :a ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :In_Situ_Correction_Type
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :InSituCorrection ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "CorrectiveAction - Recall" ;
+   rdfs:label "Recall" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :CorrectiveAction ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasActionType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :a ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Recall_Type
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Recall ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "CorrectiveAction - Safety Alert" ;
+   rdfs:label "Safety Alert" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :CorrectiveAction ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasActionType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :a ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Safety_Alert_Type
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :SafetyAlert ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "CorrectiveAction - User Notice" ;
+   rdfs:label "User Notice" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :CorrectiveAction ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasActionType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :a ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :User_Notice_Type
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :UserNotice ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Active Device" ;
+   rdfs:label "Device type Active Device" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasDeviceType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Active_Device_Type
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ActiveDevice ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Active Implant" ;
+   rdfs:label "Device type Active Implant" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasDeviceType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Active_Implant_Type
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ActiveImplant ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Class A risk" ;
+   rdfs:label "Device risk Class A" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRiskClass ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Class_A
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ClassA ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Class B risk" ;
+   rdfs:label "Device risk Class B" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRiskClass ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Class_B
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ClassB ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Class C risk" ;
+   rdfs:label "Device risk Class C" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRiskClass ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Class_C
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ClassC ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
 
 [ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
    rdfs:comment "Class D risk" ;
@@ -3224,6 +3717,141 @@ xsd:date rdf:type rdfs:Datatype .
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :ClassIIb ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Implantable Active Device" ;
+   rdfs:label "Device type Implantable Active Device" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasDeviceType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Implantable_Active_Type
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ImplantableActiveDevice ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Implantable Device" ;
+   rdfs:label "Device type Implantable Device" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasDeviceType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Implantable_Type
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ImplantableDevice ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "In Vitro" ;
+   rdfs:label "Device type In Vitro" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasDeviceType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :In_Vitro_Diagnostic_Device_Type
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :InVitroDiagnosticDevice ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Self Test" ;
+   rdfs:label "Device type Self Test" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasDeviceType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Self_Test_Device_Type
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :SelfTestDevice ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "Single Use" ;
+   rdfs:label "Device type Single Use" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasDeviceType ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Single_Use_Device_Type
+                                                                ] ;
+                                                      rdf:rest rdf:nil
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :SingleUseDevice ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> :d
                                                      ] ;
                                            rdf:rest rdf:nil
@@ -3873,195 +4501,6 @@ xsd:date rdf:type rdfs:Datatype .
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :SoftwareRisk ;
                                                        <http://www.w3.org/2003/11/swrl#argument1> :r
-                                                     ] ;
-                                           rdf:rest rdf:nil
-                                         ]
- ] .
-
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "CorrectiveAction - In Situ" ;
-   rdfs:label "In situ" ;
-   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :CorrectiveAction ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasActionType ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> :a ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> :In_Situ_Correction_Type
-                                                                ] ;
-                                                      rdf:rest rdf:nil
-                                                    ]
-                                         ] ;
-   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :InSituCorrection ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
-                                                     ] ;
-                                           rdf:rest rdf:nil
-                                         ]
- ] .
-
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "CorrectiveAction - Recall" ;
-   rdfs:label "Recall" ;
-   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :CorrectiveAction ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasActionType ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> :a ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Recall_Type
-                                                                ] ;
-                                                      rdf:rest rdf:nil
-                                                    ]
-                                         ] ;
-   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Recall ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
-                                                     ] ;
-                                           rdf:rest rdf:nil
-                                         ]
- ] .
-
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "CorrectiveAction - Safety Alert" ;
-   rdfs:label "Safety Alert" ;
-   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :CorrectiveAction ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasActionType ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> :a ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Safety_Alert_Type
-                                                                ] ;
-                                                      rdf:rest rdf:nil
-                                                    ]
-                                         ] ;
-   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :SafetyAlert ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
-                                                     ] ;
-                                           rdf:rest rdf:nil
-                                         ]
- ] .
-
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "CorrectiveAction - User Notice" ;
-   rdfs:label "User Notice" ;
-   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :CorrectiveAction ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasActionType ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> :a ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> :User_Notice_Type
-                                                                ] ;
-                                                      rdf:rest rdf:nil
-                                                    ]
-                                         ] ;
-   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :UserNotice ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :a
-                                                     ] ;
-                                           rdf:rest rdf:nil
-                                         ]
- ] .
-
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Class A risk" ;
-   rdfs:label "Device risk Class A" ;
-   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRiskClass ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Class_A
-                                                                ] ;
-                                                      rdf:rest rdf:nil
-                                                    ]
-                                         ] ;
-   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ClassA ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
-                                                     ] ;
-                                           rdf:rest rdf:nil
-                                         ]
- ] .
-
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Class B risk" ;
-   rdfs:label "Device risk Class B" ;
-   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRiskClass ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Class_B
-                                                                ] ;
-                                                      rdf:rest rdf:nil
-                                                    ]
-                                         ] ;
-   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ClassB ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
-                                                     ] ;
-                                           rdf:rest rdf:nil
-                                         ]
- ] .
-
-[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
-   rdfs:comment "Class C risk" ;
-   rdfs:label "Device risk Class C" ;
-   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
-   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Device ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
-                                                     ] ;
-                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRiskClass ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument1> :d ;
-                                                                  <http://www.w3.org/2003/11/swrl#argument2> :Class_C
-                                                                ] ;
-                                                      rdf:rest rdf:nil
-                                                    ]
-                                         ] ;
-   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
-                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :ClassC ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> :d
                                                      ] ;
                                            rdf:rest rdf:nil
                                          ]
