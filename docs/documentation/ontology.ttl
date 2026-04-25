@@ -81,6 +81,14 @@
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
 
 
+###  http://www.w3.org/2000/01/rdf-schema#sameAS
+rdfs:sameAS rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
 ###  http://www.w3.org/2002/07/owl#priorVersion
 owl:priorVersion rdf:type owl:AnnotationProperty .
 
@@ -927,7 +935,8 @@ xsd:date rdf:type rdfs:Datatype .
                           owl:cardinality "1"^^xsd:nonNegativeInteger
                         ] ;
         rdfs:comment "A medical device used for diagnostic or therapeutic purposes"@en ;
-        rdfs:label "Device" .
+        rdfs:label "Device" ;
+        rdfs:sameAs "http://dbpedia.org/resource/Medical_device"^^xsd:anyURI .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#DeviceFailure
@@ -1143,7 +1152,8 @@ xsd:date rdf:type rdfs:Datatype .
                                 owl:cardinality "1"^^xsd:nonNegativeInteger
                               ] ;
               rdfs:comment "An organization responsible for producing medical devices and registering them in EUDAMED."@en ;
-              rdfs:label "Manufacturer" .
+              rdfs:label "Manufacturer" ;
+              rdfs:sameAs "http://dbpedia.org/resource/Manufacturer"^^xsd:anyURI .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#MaterialRisk
@@ -1244,7 +1254,8 @@ xsd:date rdf:type rdfs:Datatype .
                         owl:cardinality "1"^^xsd:nonNegativeInteger
                       ] ;
       rdfs:comment "A potential hazard associated with a medical device, classified according to IMDRF terminology."@en ;
-      rdfs:label "Risk" .
+      rdfs:label "Risk" ;
+      rdfs:sameAs "http://dbpedia.org/resource/Risk"^^xsd:anyURI .
 
 
 ###  http://www.noel-garcia.org/ontologies/medical-devices#RiskCategory

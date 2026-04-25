@@ -141,6 +141,20 @@
     
 
 
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAS -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAS"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#sameAs -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#sameAs"/>
+    
+
+
     <!-- http://www.w3.org/2002/07/owl#priorVersion -->
 
 
@@ -1396,6 +1410,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A medical device used for diagnostic or therapeutic purposes</rdfs:comment>
         <rdfs:label>Device</rdfs:label>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/resource/Medical_device</rdfs:sameAs>
     </owl:Class>
     
 
@@ -1732,6 +1747,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">An organization responsible for producing medical devices and registering them in EUDAMED.</rdfs:comment>
         <rdfs:label>Manufacturer</rdfs:label>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/resource/Manufacturer</rdfs:sameAs>
     </owl:Class>
     
 
@@ -1889,6 +1905,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A potential hazard associated with a medical device, classified according to IMDRF terminology.</rdfs:comment>
         <rdfs:label>Risk</rdfs:label>
+        <rdfs:sameAs rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://dbpedia.org/resource/Risk</rdfs:sameAs>
     </owl:Class>
     
 

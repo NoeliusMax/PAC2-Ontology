@@ -64,6 +64,12 @@
 # http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
+# http://www.w3.org/2000/01/rdf-schema#sameAS
+<http://www.w3.org/2000/01/rdf-schema#sameAS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
 # http://www.w3.org/2002/07/owl#priorVersion
 <http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
 # 
@@ -853,6 +859,7 @@ _:genid25 <http://www.w3.org/2002/07/owl#onProperty> <http://www.noel-garcia.org
 _:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.noel-garcia.org/ontologies/medical-devices#Device> <http://www.w3.org/2000/01/rdf-schema#comment> "A medical device used for diagnostic or therapeutic purposes"@en .
 <http://www.noel-garcia.org/ontologies/medical-devices#Device> <http://www.w3.org/2000/01/rdf-schema#label> "Device" .
+<http://www.noel-garcia.org/ontologies/medical-devices#Device> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/resource/Medical_device"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 # 
 # http://www.noel-garcia.org/ontologies/medical-devices#DeviceFailure
 <http://www.noel-garcia.org/ontologies/medical-devices#DeviceFailure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1049,6 +1056,7 @@ _:genid45 <http://www.w3.org/2002/07/owl#onProperty> <https://schema.org/#name> 
 _:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.noel-garcia.org/ontologies/medical-devices#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#comment> "An organization responsible for producing medical devices and registering them in EUDAMED."@en .
 <http://www.noel-garcia.org/ontologies/medical-devices#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#label> "Manufacturer" .
+<http://www.noel-garcia.org/ontologies/medical-devices#Manufacturer> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/resource/Manufacturer"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 # 
 # http://www.noel-garcia.org/ontologies/medical-devices#MaterialRisk
 <http://www.noel-garcia.org/ontologies/medical-devices#MaterialRisk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -1140,6 +1148,7 @@ _:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://www.noel-garcia.org
 _:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
 <http://www.noel-garcia.org/ontologies/medical-devices#Risk> <http://www.w3.org/2000/01/rdf-schema#comment> "A potential hazard associated with a medical device, classified according to IMDRF terminology."@en .
 <http://www.noel-garcia.org/ontologies/medical-devices#Risk> <http://www.w3.org/2000/01/rdf-schema#label> "Risk" .
+<http://www.noel-garcia.org/ontologies/medical-devices#Risk> <http://www.w3.org/2000/01/rdf-schema#sameAs> "http://dbpedia.org/resource/Risk"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 # 
 # http://www.noel-garcia.org/ontologies/medical-devices#RiskCategory
 <http://www.noel-garcia.org/ontologies/medical-devices#RiskCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
